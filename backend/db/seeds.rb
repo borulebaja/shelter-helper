@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+ShelterLocation.destroy_all
+Need.destroy_all
+
+user1 = User.create(name: "alan", email: "alan@example.com", password: "0000")
+
+shelter_location1 = ShelterLocation.create(name: 'test', address: '708 Main St, Houston TX, 77002', user_id: 1)
+shelter_location2 = ShelterLocation.create(name: "test2", address: "1625 Main St, Houston, TX, 77002", user_id: 1)
+
+Need.create(name_of_needs: "blankets", shelter_location_id: 1)
