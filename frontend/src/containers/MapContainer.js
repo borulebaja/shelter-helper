@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { GoogleMapsApi } from "../Api.js";
+import { GoogleMapsApiKey } from "../Api.js";
+import { GoogleApiWrapper } from "google-maps-react";
 
 class MapContainer extends Component {
   render() {
-    console.log(GoogleMapsApi.apiKey);
+    console.log(GoogleMapsApiKey.apiKey);
     return <div>Map Container</div>;
   }
 }
-export default MapContainer;
+export default GoogleApiWrapper({
+  apiKey: GoogleMapsApiKey.apiKey
+})(MapContainer);

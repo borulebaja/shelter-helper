@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import Card from "@material-ui/core/Card";
-import MapContainer from "./containers/MapContainer";
-// import logo from "./logo.svg";
-// import "./App.css";
+import { Router } from "react-router";
+import { Redirect, Route, Switch } from "react-router-dom";
+import history from "./state/history";
+import SignUp from "./components/SignUp";
+import Login from "./components/Login";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <MapContainer />
-        <Card>Shelter Homes</Card>
-      </div>
+      <Router history={history}>
+        <Switch>
+          <Route path="/signup" component={SignUp} />
+          <Route path="/login" component={Login} />
+          <Route path="/" render={() => <Redirect to="/" />} />
+        </Switch>
+      </Router>
     );
   }
 }

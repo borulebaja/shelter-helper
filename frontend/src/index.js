@@ -5,8 +5,6 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { reducer } from "./state/reducer";
 import { initialState } from "./state/initial";
-
-// import './index.css';
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
