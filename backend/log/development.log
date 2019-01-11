@@ -597,3 +597,50 @@ Processing by Api::V1::ShelterLocationsController#index as HTML
 Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/api/v1/needs" for 127.0.0.1 at 2019-01-10 16:20:15 -0600
+Processing by Api::V1::NeedsController#index as HTML
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs"[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:11
+Completed 200 OK in 31ms (Views: 20.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/players" for 127.0.0.1 at 2019-01-10 16:46:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/players"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/shelter_locations" for 127.0.0.1 at 2019-01-10 16:46:22 -0600
+Processing by Api::V1::ShelterLocationsController#index as HTML
+  [1m[36mShelterLocation Load (12.3ms)[0m  [1m[34mSELECT "shelter_locations".* FROM "shelter_locations"[0m
+  ↳ app/controllers/api/v1/shelter_locations_controller.rb:11
+Completed 200 OK in 99ms (Views: 74.7ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/api/v1/shelter_locations" for 127.0.0.1 at 2019-01-10 20:20:18 -0600
+Processing by Api::V1::ShelterLocationsController#index as HTML
+  [1m[36mShelterLocation Load (1.0ms)[0m  [1m[34mSELECT "shelter_locations".* FROM "shelter_locations"[0m
+  ↳ app/controllers/api/v1/shelter_locations_controller.rb:11
+Completed 200 OK in 120ms (Views: 77.4ms | ActiveRecord: 4.8ms)
+
+
