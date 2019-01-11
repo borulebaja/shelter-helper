@@ -637,3 +637,10 @@ Processing by Api::V1::ShelterLocationsController#index as HTML
 Completed 200 OK in 99ms (Views: 74.7ms | ActiveRecord: 13.3ms)
 
 
+Started GET "/api/v1/shelter_locations" for 127.0.0.1 at 2019-01-10 20:20:18 -0600
+Processing by Api::V1::ShelterLocationsController#index as HTML
+  [1m[36mShelterLocation Load (1.0ms)[0m  [1m[34mSELECT "shelter_locations".* FROM "shelter_locations"[0m
+  ↳ app/controllers/api/v1/shelter_locations_controller.rb:11
+Completed 200 OK in 120ms (Views: 77.4ms | ActiveRecord: 4.8ms)
+
+
