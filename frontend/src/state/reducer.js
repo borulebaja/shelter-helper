@@ -1,14 +1,21 @@
+import { LOGIN, SIGNUP, LOGOUT } from "./types";
 import history from "./history";
 
 export const reducer = function(currentState, action) {
   const newState = { ...currentState };
 
   switch (action.type) {
-    case "GET_USER":
-      newState.selectedUser = action.payload;
+    case LOGIN:
+      newState.currentUser = action.payload;
+      history.push("/homepage");
       break;
-    case "CURRENT_USER":
-      //   history.push(`/question/${action.payload}`);
+    case SIGNUP:
+      newState.currentUser = action.payload;
+      history.push("/login");
+      break;
+    case LOGOUT:
+      localStorage.clear();
+      history.push("/homepage");
       break;
     default:
       return newState;
