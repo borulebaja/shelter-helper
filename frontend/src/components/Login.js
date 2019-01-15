@@ -1,33 +1,74 @@
 import React, { Component } from "react";
-import { Field, reduxForm } from "redux-form";
+import { connect } from "react-redux";
+import { actions } from "../state/actions";
+
+const mapDispatchToProps = dispatch => {
+  return {
+    login: user => dispatch(actions.login(user))
+  };
+};
 
 class Login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      password: ""
+    };
+  }
+
+  handleChange = e => {
+    e.persist();
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
   render() {
+    console.log("test");
     return (
-      <form>
-        <div>
-          <h2>Login</h2>
-        </div>
-        <div>
-          <label>Email</label>
+      <div>
+        <form>
           <div>
-            <Field name="email" component="input" type="email" />
+            <h2>Login</h2>
           </div>
-        </div>
-        <div>
-          <label>Password</label>
           <div>
-            <Field name="password" component="input" type="password" />
+            <label>Email</label>
+            <input
+              name="email"
+              type="text"
+              value={this.state.email}
+              onChange={e => this.handleChange(e)}
+            />
           </div>
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+          <div>
+            <label>Password</label>
+            <input
+              name="password"
+              type="password"
+              value={this.state.password}
+              onChange={e => this.handleChange(e)}
+            />
+          </div>
+          <div>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                this.props.login(this.state);
+              }}
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     );
   }
 }
 
-export default reduxForm({
-  form: "login"
-})(Login);
+// const mapStateToProps = (state) => ({
+//   login: { email: 'alan@example.com', password: '0000' }
+// })
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Login);
