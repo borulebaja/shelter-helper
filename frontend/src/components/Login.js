@@ -4,29 +4,59 @@ import { actions } from "../state/actions";
 
 const mapDispatchToProps = dispatch => {
   return {
-    login: e => dispatch(actions.login(e))
+    login: user => dispatch(actions.login(user))
   };
 };
 
 class Login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      password: ""
+    };
+  }
+
+  handleChange = e => {
+    e.persist();
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
   render() {
     console.log("test");
     return (
       <div>
-        <form onSubmit={e => this.props.login(e)}>
+        <form>
           <div>
             <h2>Login</h2>
           </div>
           <div>
             <label>Email</label>
-            <input name="emailInput" type="text" />
+            <input
+              name="email"
+              type="text"
+              value={this.state.email}
+              onChange={e => this.handleChange(e)}
+            />
           </div>
           <div>
             <label>Password</label>
-            <input name="passwordInput" type="password" />
+            <input
+              name="password"
+              type="password"
+              value={this.state.password}
+              onChange={e => this.handleChange(e)}
+            />
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                this.props.login(this.state);
+              }}
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>

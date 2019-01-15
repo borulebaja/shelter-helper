@@ -20,9 +20,9 @@ class NavBar extends Component {
             {/* <Tabs indicatorColor="primary" textColor="primary" centered> */}
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
             {localStorage.token ? (
-              <Tab label="Login" onClick={() => history.push("/login")} />
+              <Tab label="Logout" onClick={this.props.logout} />
             ) : (
-              <Tab label="Logout" onClick={() => history.push("/homepage")} />
+              <Tab label="Login" onClick={() => history.push("/login")} />
             )}
             {/* </Tabs> */}
           </Toolbar>

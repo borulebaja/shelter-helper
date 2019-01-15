@@ -4,16 +4,17 @@ import { actions } from "../state/actions";
 
 const mapDispatchToProps = dispatch => {
   return {
-    signUp: e => dispatch(actions.signUp(e))
+    signUp: user => dispatch(actions.signUp(user))
   };
 };
+
 class SignUp extends Component {
   constructor() {
     super();
     this.state = {
-      nameInput: "",
-      emailInput: "",
-      passwordInput: ""
+      name: "",
+      email: "",
+      password: ""
     };
   }
 
@@ -31,7 +32,7 @@ class SignUp extends Component {
         <div>
           <label>Name</label>
           <input
-            name="nameInput"
+            name="name"
             type="text"
             value={this.state.name}
             onChange={e => this.handleChange(e)}
@@ -40,7 +41,7 @@ class SignUp extends Component {
         <div>
           <label>Email</label>
           <input
-            name="emailInput"
+            name="email"
             type="text"
             value={this.state.email}
             onChange={e => this.handleChange(e)}
@@ -49,14 +50,21 @@ class SignUp extends Component {
         <div>
           <label>Password</label>
           <input
-            name="passwordInput"
+            name="password"
             type="password"
             value={this.state.password}
             onChange={e => this.handleChange(e)}
           />
         </div>
         <div>
-          <button onClick={e => this.props.signUp(e)}>Submit</button>
+          <button
+            onClick={e => {
+              e.preventDefault();
+              this.props.signUp(this.state);
+            }}
+          >
+            Submit
+          </button>
         </div>
       </form>
     );

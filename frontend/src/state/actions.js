@@ -1,18 +1,17 @@
 import { LOGIN, SIGNUP, LOGOUT } from "./types";
 
 export const actions = {
-  login(e) {
+  login(user) {
     return function(dispatch, getState) {
-      e.preventDefault();
-      console.log("test");
+      console.log("are they lying to me", user);
       fetch("http://localhost:3000/api/v1/auth/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          email: e.target.emailInput,
-          password: e.target.passwordInput
+          email: user.email,
+          password: user.password
         })
       })
         .then(res => res.json())
@@ -26,17 +25,9 @@ export const actions = {
     };
   },
 
-  signUp(e) {
+  signUp(user) {
     //console.log("AcTion!!!");
     return function(dispatch, getState) {
-      e.preventDefault();
-      let user = {
-        name: e.target.nameInput.value,
-        email: e.target.emailInput.value,
-        password: e.target.passwordInput.value
-      };
-      console.log(user);
-      console.log("test");
       fetch("http://localhost:3000/api/v1/users/", {
         method: "POST",
         headers: {
