@@ -1,4 +1,4 @@
-class ShelterLocation < ApplicationRecord
+class Shelter < ApplicationRecord
     has_many :needs
     belongs_to :user
     geocoded_by :address

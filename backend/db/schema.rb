@@ -13,22 +13,26 @@
 ActiveRecord::Schema.define(version: 2019_01_10_192743) do
 
   create_table "needs", force: :cascade do |t|
-    t.integer "shelter_location_id"
-    t.string "name_of_needs"
+    t.integer "shelter_id"
+    t.string "title"
+    t.string "image_url"
+    t.string "description"
+    t.string "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["shelter_location_id"], name: "index_needs_on_shelter_location_id"
+    t.index ["shelter_id"], name: "index_needs_on_shelter_id"
   end
 
-  create_table "shelter_locations", force: :cascade do |t|
+  create_table "shelters", force: :cascade do |t|
     t.string "name"
     t.string "address"
+    t.string "phone"
     t.decimal "latitude", precision: 15, scale: 13
     t.decimal "longitude", precision: 15, scale: 13
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_shelter_locations_on_user_id"
+    t.index ["user_id"], name: "index_shelters_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

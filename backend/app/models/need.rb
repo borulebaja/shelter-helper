@@ -1,3 +1,3 @@
 class Need < ApplicationRecord
-    belongs_to :shelter_location
+    belongs_to :shelter
 end
