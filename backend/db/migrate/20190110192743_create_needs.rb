@@ -1,8 +1,11 @@
 class CreateNeeds < ActiveRecord::Migration[5.2]
   def change
     create_table :needs do |t|
-      t.belongs_to :shelter_location
-      t.string :name_of_needs
+      t.belongs_to :shelter
+      t.string :title
+      t.string :image_url
+      t.string :description
+      t.string :details
       t.timestamps
     end
   end
