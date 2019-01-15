@@ -4,6 +4,7 @@ class CreateShelters < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :address
       t.string :phone
+      t.string :image_url
       t.decimal :latitude, :precision => 15, :scale => 13
       t.decimal :longitude, :precision => 15, :scale => 13
       t.belongs_to :user

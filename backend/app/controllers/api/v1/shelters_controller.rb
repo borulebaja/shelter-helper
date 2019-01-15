@@ -26,7 +26,7 @@ class Api::V1::SheltersController < Api::V1::ApplicationController
     end
     
     def shelter_params
-        params.require(:shelter).permit(:name, :address, :latitude, :longitude, :user_id)
+        params.require(:shelter).permit(:name, :address, :phone, :image_url, :latitude, :longitude, :user_id)
     end
     
     def define_current_shelter
