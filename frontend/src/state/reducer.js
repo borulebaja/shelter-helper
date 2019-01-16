@@ -1,4 +1,4 @@
-import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS } from "./types";
+import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS, ADD_SHELTER } from "./types";
 import history from "./history";
 
 export const reducer = function(currentState, action) {
@@ -19,14 +19,14 @@ export const reducer = function(currentState, action) {
       break;
     case GET_SHELTERS:
       newState.shelters = action.payload;
-      //history.push("/shelterhome");
       break;
-    // case ADD_SHELTER:
-    //   newState.shelters = [...newState.shelters, action.payload]
-    //   break;
+    case ADD_SHELTER:
+      newState.shelters = [...newState.shelters, action.payload];
+      break;
     // case DELETE_SHELTER:
     //   newState.shelters = [...newState.shelters, action.payload]
     //   break;
+    // return state.filter((shelter) => shelter.id !== action.id);
     default:
       return newState;
   }

@@ -18,9 +18,14 @@ class NavBar extends Component {
           <Toolbar>
             <h3 onClick={() => history.push("/")}> Homeless Shelters </h3>
             <Tab label="Shelters" onClick={() => history.push("/")} />
+            {/* // users should be logged in to view form */}
+            <Tab
+              label="ShelterForm"
+              onClick={() => history.push("/shelterform")}
+            />
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
             {localStorage.token ? (
-              <Tab label="Logout" onClick={this.props.logout} />
+              <Tab label="Logout" onClick={() => this.props.logout()} />
             ) : (
               <Tab label="Login" onClick={() => history.push("/login")} />
             )}

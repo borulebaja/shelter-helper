@@ -8,7 +8,7 @@ import Login from "./components/Login";
 import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
 import ShelterList from "./components/ShelterList";
-//import MapContainer from "./containers/MapContainer";
+import ShelterForm from "./components/ShelterForm";
 
 export default class _App extends Component {
   render() {
@@ -21,6 +21,7 @@ export default class _App extends Component {
             <Route path="/signup" component={SignUp} />
             <Route path="/homepage" component={HomePage} />
             <Route path="/shelterlist" component={ShelterList} />
+            <Route path="/shelterform" component={ShelterForm} />
             <Route path="/" render={() => <Redirect to="/homepage" />} />
           </Switch>
         </Router>
