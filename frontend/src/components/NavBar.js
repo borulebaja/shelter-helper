@@ -16,18 +16,14 @@ class NavBar extends Component {
       <div>
         <AppBar position="static">
           <Toolbar>
-            <h3 onClick={() => history.push("/")}> SHH </h3>
-            <Tab
-              label="ShelterHome"
-              onClick={() => history.push("/shelterhome")}
-            />
+            <h3 onClick={() => history.push("/")}> Homeless Shelters </h3>
+            <Tab label="Shelters" onClick={() => history.push("/")} />
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
             {localStorage.token ? (
               <Tab label="Logout" onClick={this.props.logout} />
             ) : (
               <Tab label="Login" onClick={() => history.push("/login")} />
             )}
-            {/* </Tabs> */}
           </Toolbar>
         </AppBar>
       </div>

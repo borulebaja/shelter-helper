@@ -17,14 +17,10 @@ export const actions = {
         .then(res => res.json())
         .then(result => {
           localStorage.setItem("token", result.token);
-          dispatch({
-            type: LOGIN,
-            payload: result
-          });
+          dispatch({ type: LOGIN, payload: result });
         });
     };
   },
-
   signUp(user) {
     //console.log("AcTion!!!");
     return function(dispatch, getState) {
@@ -60,11 +56,43 @@ export const actions = {
         .then(res => res.json())
 
         .then(result => {
-          dispatch({
-            type: GET_SHELTERS,
-            payload: result
-          });
+          dispatch({ type: GET_SHELTERS, payload: result });
         });
     };
   }
 };
+
+// addShelter() {
+//   return function (dispatch, getState) {
+//     fetch('http://localhost:3000/api/v1/shelters', {
+//       method: 'POST',
+//       headers: {
+//         Authorization: `Bearer ${localStorage.getItem('token')}`,
+//         'Content-Type': 'application/json',
+//         Accept: 'application/json'
+//       },
+//       body: JSON.stringify({
+//         shelter: shelter
+//       })
+//     })
+
+//       .then(res => res.json())
+
+//       .then(result => {
+//         dispatch({
+//           type: ADD_SHELTER,
+//           payload: result
+//         })
+//       })
+//   },
+
+// destroyShelter() {
+
+//   fetch(`http://localhost:3000/api/v1/shelters/${this.shelterID()}`, {
+//     method: "DELETE",
+//     headers: {
+//       Authorization: `Bearer ${localStorage.getItem("token")}`
+//     }
+//   }).then(() => this.props.logout())
+// };
+// }

@@ -18,11 +18,15 @@ export const reducer = function(currentState, action) {
       history.push("/homepage");
       break;
     case GET_SHELTERS:
-      console.log(action.payload);
       newState.shelters = action.payload;
       //history.push("/shelterhome");
-
       break;
+    // case ADD_SHELTER:
+    //   newState.shelters = [...newState.shelters, action.payload]
+    //   break;
+    // case DELETE_SHELTER:
+    //   newState.shelters = [...newState.shelters, action.payload]
+    //   break;
     default:
       return newState;
   }
