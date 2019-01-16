@@ -1,4 +1,4 @@
-import { LOGIN, SIGNUP, LOGOUT } from "./types";
+import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS } from "./types";
 import history from "./history";
 
 export const reducer = function(currentState, action) {
@@ -17,7 +17,14 @@ export const reducer = function(currentState, action) {
       localStorage.clear();
       history.push("/homepage");
       break;
+    case GET_SHELTERS:
+      console.log(action.payload);
+      newState.shelters = action.payload;
+      //history.push("/shelterhome");
+
+      break;
     default:
       return newState;
   }
+  return newState;
 };

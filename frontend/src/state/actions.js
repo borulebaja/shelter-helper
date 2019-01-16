@@ -1,4 +1,4 @@
-import { LOGIN, SIGNUP, LOGOUT } from "./types";
+import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS } from "./types";
 
 export const actions = {
   login(user) {
@@ -47,5 +47,24 @@ export const actions = {
 
   logout() {
     return { type: LOGOUT };
+  },
+
+  getShelters() {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+
+        .then(result => {
+          dispatch({
+            type: GET_SHELTERS,
+            payload: result
+          });
+        });
+    };
   }
 };
