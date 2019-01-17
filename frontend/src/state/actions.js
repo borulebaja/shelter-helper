@@ -4,7 +4,8 @@ import {
   LOGOUT,
   GET_SHELTERS,
   ADD_SHELTER,
-  DELETE_SHELTER
+  DELETE_SHELTER,
+  UPDATE_SHELTER
 } from "./types";
 
 export const actions = {
@@ -93,6 +94,32 @@ export const actions = {
             type: ADD_SHELTER,
             payload: result
           });
+        });
+    };
+  },
+
+  updateShelter(shelter, id) {
+    return function(dispatch, getState) {
+      //need to pass an id from editShelter component
+      console.log(shelter, id);
+      fetch(`http://localhost:3000/api/v1/shelters/${id}`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          shelter: {
+            name: shelter.name,
+            address: shelter.address,
+            phone: shelter.phone
+          }
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: UPDATE_SHELTER, payload: result });
         });
     };
   },

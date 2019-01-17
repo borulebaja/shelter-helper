@@ -1,10 +1,26 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { actions } from "../state/actions";
+import EditShelter from "./EditShelter";
 
 class ShelterDetails extends Component {
+  state = {
+    showEditForm: false
+  };
+
+  editShelt = () => {
+    if (this.state.showEditForm) {
+      return (
+        <EditShelter
+          currentShelter={this.props.currentShelter}
+          updateShelter={this.props.updateShelter}
+          shelterId={this.props.shelter.id}
+        />
+      );
+    }
+  };
+
   render() {
-    console.log(this.props.shelter);
     return (
       <div>
         <ul>
@@ -18,78 +34,30 @@ class ShelterDetails extends Component {
           <li>address:{this.props.shelter.address}</li>
           <li>phone:{this.props.shelter.phone}</li>
         </ul>
-        {/* EDIT/DELETE button in heaaa*/}
-        <button type="edit">edit me</button> <br />
+        <button
+          type="edit" // onClick={() => this.props.updateShelter(this.props.shelter.id)}
+          onClick={() =>
+            this.setState({ showEditForm: !this.state.showEditForm })
+          }
+        >
+          edit me
+        </button>
+        <br />
         <button
           type="delete"
           onClick={() => this.props.deleteShelter(this.props.shelter.id)}
         >
           delete me
         </button>
+        {this.editShelt()}
       </div>
     );
   }
 }
 
+const mapStateToProps = () => {};
+
 export default connect(
-  null,
+  mapStateToProps,
   actions
 )(ShelterDetails);
-
-// import React from "react";
-// import PropTypes from "prop-types";
-// import { withStyles } from "@material-ui/core/styles";
-// import Card from "@material-ui/core/Card";
-// import CardActionArea from "@material-ui/core/CardActionArea";
-// import CardActions from "@material-ui/core/CardActions";
-// import CardContent from "@material-ui/core/CardContent";
-// import CardMedia from "@material-ui/core/CardMedia";
-// import Button from "@material-ui/core/Button";
-// import Typography from "@material-ui/core/Typography";
-
-// const styles = {
-//   card: {
-//     maxWidth: 345
-//   },
-//   media: {
-//     height: 140
-//   }
-// };
-
-// function MediaCard(props) {
-//   const { classes } = props;
-//   return (
-//     <Card className={classes.card}>
-//       <CardActionArea>
-//         <CardMedia
-//           className={classes.media}
-//           image="/static/images/cards/contemplative-reptile.jpg"
-//           title="Contemplative Reptile"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="h2">
-//             Lizard
-//           </Typography>
-//           <Typography component="p">
-//             Lizards are a widespread group of squamate reptiles, with over 6,000
-//             species, ranging across all continents except Antarctica
-//           </Typography>
-//         </CardContent>
-//       </CardActionArea>
-//       <CardActions>
-//         <Button size="small" color="primary">
-//           Share
-//         </Button>
-//         <Button size="small" color="primary">
-//           Learn More
-//         </Button>
-//       </CardActions>
-//     </Card>
-//   );
-// }
-
-// MediaCard.propTypes = {
-//   classes: PropTypes.object.isRequired
-// };
-
-// export default withStyles(styles)(MediaCard);
