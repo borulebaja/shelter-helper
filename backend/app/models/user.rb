@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    has_many :shelter_locations
+    has_many :shelters
     has_secure_password
 end

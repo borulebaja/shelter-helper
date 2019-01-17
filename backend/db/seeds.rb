@@ -13,7 +13,7 @@ Need.destroy_all
 user1 = User.create(name: "alan", email: "alan@example.com", password: "0000")
 user2 = User.create(name: "bims", email: "bims@example.com", password: "0000")
 
-shelter1 = Shelter.create(name: 'flatiron_shelter', address: '708 Main St, Houston TX, 77002', phone: '000-000-0000', image_url: 'https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/999/s200/flatironschool.png', user_id: user1.id)
-shelter2 = Shelter.create(name: 'alan_shelter', address: '1625 Main St, Houston, TX, 77002', phone: '000-000-0000', image_url: 'https://files.slack.com/files-pri/T02MD9XTF-FFDGY6XLY/alan_stars.png', user_id: user2.id)
+shelter1 = Shelter.create(name: 'Flatiron Shelter', address: '708 Main St, Houston TX, 77002', phone: '000-000-0000', image_url: 'https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/999/s200/flatironschool.png', user_id: user1.id)
+shelter2 = Shelter.create(name: 'Alan Shelter', address: '1625 Main St, Houston, TX, 77002', phone: '000-000-0000', image_url: 'https://files.slack.com/files-pri/T02MD9XTF-FFDGY6XLY/alan_stars.png', user_id: user2.id)
 
 need1 = Need.create(title: "blankets", image_url: 'https://images-na.ssl-images-amazon.com/images/I/91i9s0wUuyL._SL1500_.jpg', description: "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey", details: 'Available everywhere', shelter_id: shelter1.id)

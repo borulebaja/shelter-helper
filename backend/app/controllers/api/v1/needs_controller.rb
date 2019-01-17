@@ -8,7 +8,9 @@ class Api::V1::NeedsController < Api::V1::ApplicationController
     end
     
     def index
-        render json: Need.all
+        shelter = Shelter.find(params[:shelter_id])
+
+        render json: shelter.needs
     end
     
     def show
