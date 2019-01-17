@@ -1,4 +1,11 @@
-import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS, ADD_SHELTER } from "./types";
+import {
+  LOGIN,
+  SIGNUP,
+  LOGOUT,
+  GET_SHELTERS,
+  ADD_SHELTER,
+  DELETE_SHELTER
+} from "./types";
 import history from "./history";
 
 export const reducer = function(currentState, action) {
@@ -23,10 +30,11 @@ export const reducer = function(currentState, action) {
     case ADD_SHELTER:
       newState.shelters = [...newState.shelters, action.payload];
       break;
-    // case DELETE_SHELTER:
-    //   newState.shelters = [...newState.shelters, action.payload]
-    //   break;
-    // return state.filter((shelter) => shelter.id !== action.id);
+    case DELETE_SHELTER:
+      newState.shelters = newState.shelters.filter(
+        shelter => shelter.id !== action.payload
+      );
+      break;
     default:
       return newState;
   }

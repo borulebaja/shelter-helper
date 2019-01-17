@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { actions } from "../state/actions";
 
 class ShelterDetails extends Component {
   render() {
+    console.log(this.props.shelter);
     return (
       <div>
         <ul>
@@ -17,13 +20,21 @@ class ShelterDetails extends Component {
         </ul>
         {/* EDIT/DELETE button in heaaa*/}
         <button type="edit">edit me</button> <br />
-        <button type="delete">delete me</button>
+        <button
+          type="delete"
+          onClick={() => this.props.deleteShelter(this.props.shelter.id)}
+        >
+          delete me
+        </button>
       </div>
     );
   }
 }
 
-export default ShelterDetails;
+export default connect(
+  null,
+  actions
+)(ShelterDetails);
 
 // import React from "react";
 // import PropTypes from "prop-types";

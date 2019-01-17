@@ -1,4 +1,11 @@
-import { LOGIN, SIGNUP, LOGOUT, GET_SHELTERS, ADD_SHELTER } from "./types";
+import {
+  LOGIN,
+  SIGNUP,
+  LOGOUT,
+  GET_SHELTERS,
+  ADD_SHELTER,
+  DELETE_SHELTER
+} from "./types";
 
 export const actions = {
   login(user) {
@@ -88,22 +95,25 @@ export const actions = {
           });
         });
     };
+  },
+
+  deleteShelter(shelterId) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${shelterId}`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({
+            type: DELETE_SHELTER,
+            payload: result
+          });
+        });
+    };
   }
-
-  // deleteShelter() {
-
-  //   fetch(`http://localhost:3000/api/v1/shelters/${this.shelterID()}`, {
-  //     method: "DELETE",
-  //     headers: {
-  //       Authorization: `Bearer ${localStorage.getItem("token")}`
-  //     }
-  //   })
-  //        .then(res => res.json())
-  //  .then(result => {
-  //            dispatch({
-  //              type: DELETE_SHELTER,
-  //              payload: result
-  //})
-  //}
-  // }
 };
