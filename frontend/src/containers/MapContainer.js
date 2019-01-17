@@ -1,36 +1,37 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import { GoogleMapsApiKey } from "../Api.js";
-//import { GoogleApiWrapper } from "google-maps-react";
-//import HomePage from "../components/HomePage";
+import Card from "@material-ui/core/Card";
 
 //const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class MapContainer extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 33.201899,
+      lng: -96.618033
     },
     zoom: 11
   };
 
   render() {
     return (
-      <div
-        style={{
-          height: "50vh",
-          width: "50%",
-          position: "absolute",
-          right: "0px",
-          bottom: "0px"
-        }}
-      >
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: GoogleMapsApiKey.apiKey }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        />
+      <div>
+        <Card
+          style={{
+            height: "80vh",
+            width: "50%",
+            position: "absolute",
+            right: "10px",
+            bottom: "10px"
+          }}
+        >
+          <GoogleMapReact
+            bootstrapURLKeys={{ key: GoogleMapsApiKey.apiKey }}
+            defaultCenter={this.props.center}
+            defaultZoom={this.props.zoom}
+          />
+        </Card>
       </div>
     );
   }

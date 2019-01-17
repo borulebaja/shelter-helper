@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_01_10_192743) do
     t.string "name"
     t.string "address"
     t.string "phone"
+    t.string "image_url"
     t.decimal "latitude", precision: 15, scale: 13
     t.decimal "longitude", precision: 15, scale: 13
     t.integer "user_id"
