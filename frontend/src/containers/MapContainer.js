@@ -1,20 +1,27 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import { GoogleMapsApiKey } from "../Api.js";
+import Marker from "../components/Marker";
 import Card from "@material-ui/core/Card";
-
-//const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import { connect } from "react-redux";
 
 class MapContainer extends Component {
   static defaultProps = {
     center: {
-      lat: 33.201899,
-      lng: -96.618033
+      lat: 29.7588788,
+      lng: -95.3638645
     },
     zoom: 11
   };
 
+  // displayPlaces = (places) => {
+  //   return places.map((place, index) => {
+  //     return <Marker key={index} rank={index + 1} lat={place.location.lat} lng={place.location.lng} name={place.name} />;
+  //   })
+  // }
+
   render() {
+    console.log(this.props);
     return (
       <div>
         <Card
@@ -30,10 +37,26 @@ class MapContainer extends Component {
             bootstrapURLKeys={{ key: GoogleMapsApiKey.apiKey }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
-          />
+          >
+            {this.props.shelters.map(shelter => (
+              <Marker
+                key={shelter.id}
+                text={shelter.name}
+                lat={shelter.latitude}
+                lng={shelter.longitude}
+              />
+            ))}
+          </GoogleMapReact>
         </Card>
       </div>
     );
   }
 }
-export default MapContainer;
+
+const mapStateToProps = state => {
+  return { shelters: state.shelters };
+};
+export default connect(
+  mapStateToProps,
+  null
+)(MapContainer);

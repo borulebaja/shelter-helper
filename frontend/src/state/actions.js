@@ -5,7 +5,10 @@ import {
   GET_SHELTERS,
   ADD_SHELTER,
   DELETE_SHELTER,
-  UPDATE_SHELTER
+  UPDATE_SHELTER,
+  ADD_NEED,
+  DELETE_NEED,
+  UPDATE_NEED
 } from "./types";
 
 export const actions = {
@@ -138,6 +141,85 @@ export const actions = {
         .then(result => {
           dispatch({
             type: DELETE_SHELTER,
+            payload: result
+          });
+        });
+    };
+  },
+
+  addNeed(need, shelter_id) {
+    console.log("in action", need, shelter_id);
+
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          need: {
+            title: need.title,
+            image_url: need.image_url,
+            description: need.description,
+            detail: need.details,
+            shelter_id: shelter_id
+          }
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          console.log("after posting to backend", result);
+
+          dispatch({
+            type: ADD_NEED,
+            payload: result
+          });
+        });
+    };
+  },
+
+  // test url in postman
+  updateNeed(need, id) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${id}`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          need: {
+            title: need.title,
+            description: need.description,
+            details: need.details
+          }
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: UPDATE_NEED, payload: result });
+        });
+    };
+  },
+
+  // test url in postman
+  deleteNeed(needId) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${needId}`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({
+            type: DELETE_NEED,
             payload: result
           });
         });
