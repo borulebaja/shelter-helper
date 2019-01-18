@@ -51,7 +51,6 @@ class EditShelter extends Component {
         <button
           onClick={e => {
             e.preventDefault();
-            // on click should take me to the edit form
             console.log("pls saveee");
             this.props.updateShelter(this.state, this.props.shelterId);
           }}
