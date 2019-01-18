@@ -5,3 +5,4 @@ export const GET_SHELTERS = "GET_SHELTERS";
 export const ADD_SHELTER = "ADD_SHELTER";
 export const DELETE_SHELTER = "DELETE_SHELTER";
 export const UPDATE_SHELTER = "UPDATE_SHELTER";
+export const GET_NEEDS = "GET_NEEDS";

@@ -47,6 +47,9 @@ export const reducer = function(currentState, action) {
       });
       history.push("/homepage");
       break;
+    // case GET_NEEDS:
+    //   newState.needs = action.payload;
+    //   break;
     default:
       return newState;
   }

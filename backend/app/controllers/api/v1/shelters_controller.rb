@@ -12,7 +12,7 @@ class Api::V1::SheltersController < Api::V1::ApplicationController
     end
     
     def show
-        render json: current_shelter
+        render json: current_shelter, include: [:needs]
     end
     
     def update
