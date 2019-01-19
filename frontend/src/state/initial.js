@@ -1,5 +1,5 @@
 export const initialState = {
   currentUser: {},
-  shelters: [],
-  needs: []
+  shelters: []
+  // needs: []
 };

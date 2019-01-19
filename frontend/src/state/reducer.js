@@ -42,7 +42,6 @@ export const reducer = function(currentState, action) {
       );
       break;
     case UPDATE_SHELTER:
-      console.log("reducer", action.payload);
       newState.shelters = newState.shelters.map(shelter => {
         if (shelter.id !== action.payload.id) {
           return shelter;
@@ -67,18 +66,31 @@ export const reducer = function(currentState, action) {
       history.push("/homepage");
       break;
     case DELETE_NEED:
-      // remove shelters from needs
-      newState.needs = newState.needs.filter(
-        need => need.id !== action.payload.id
-      );
+      let destroyNeed = action.payload;
+      newState.shelters = newState.shelters.map(shelter => {
+        if (shelter.id === destroyNeed.shelter_id) {
+          let updatedNeeds = shelter.needs.filter(
+            need => need.id !== destroyNeed.id
+          );
+          return { ...shelter, needs: updatedNeeds };
+        } else {
+          return shelter;
+        }
+      });
+
       break;
     case UPDATE_NEED:
-      console.log("reducer", action.payload);
-      newState.needs = newState.needs.map(need => {
-        if (need.id !== action.payload.id) {
-          return need;
+      newState.shelters = newState.shelters.map(shelter => {
+        if (shelter.id === action.payload.shelter_id) {
+          shelter.needs.map(need => {
+            if (need.id !== action.payload.id) {
+              return need;
+            }
+            return { ...need, ...action.payload };
+          });
+        } else {
+          return shelter;
         }
-        return { ...need, ...action.payload };
       });
       history.push("/homepage");
       break;

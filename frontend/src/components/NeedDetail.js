@@ -38,38 +38,40 @@ class NeedDetail extends Component {
   };
 
   render() {
-    console.log("need", this.props);
-
     return (
       <div>
         <img src={this.props.need.image_url} alt="" width="150" height="120" />
         <h4>{this.props.need.title}</h4>
-        <li>description:{this.props.need.description}</li>
-        <li>details:{this.props.need.details}</li>
-
-        <button
-          type="edit"
-          onClick={() =>
-            this.setState({
-              showEditNeedForm: !this.state.showEditNeedForm
-            })
-          }
-        >
-          edit need
-        </button>
-        <br />
-        <button
-          type="delete"
-          onClick={() =>
-            this.props.deleteNeed(
-              this.props.need.shelter_id,
-              this.props.need.id
-            )
-          }
-        >
-          delete need
-        </button>
-        {this.editSheltNeed()}
+        <b>Description: </b> {this.props.need.description} <br />
+        <b>Details: </b> {this.props.need.details} <br />
+        {/* { this.props.need.quantity == this.props.need.bought ? 'yay we have all our needs and hide the button to say i bought this} : <button onClick={the function to increment bought }> */}
+        {localStorage.token && (
+          <div>
+            <button
+              type="edit"
+              onClick={() =>
+                this.setState({
+                  showEditNeedForm: !this.state.showEditNeedForm
+                })
+              }
+            >
+              edit need
+            </button>
+            <br />
+            <button
+              type="delete"
+              onClick={() =>
+                this.props.deleteNeed(
+                  this.props.need.shelter_id,
+                  this.props.need.id
+                )
+              }
+            >
+              delete need
+            </button>
+            {this.editSheltNeed()}
+          </div>
+        )}
         {/* <ShelterNeeds needs={this.state.needs} /> */}
       </div>
     );

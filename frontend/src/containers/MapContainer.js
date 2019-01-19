@@ -15,14 +15,13 @@ class MapContainer extends Component {
   };
 
   render() {
-    console.log(this.props);
     return (
       <div>
         <Card
           style={{
-            height: "80vh",
-            width: "50%",
-            position: "absolute",
+            height: "60vh",
+            width: "30%",
+            position: "fixed",
             right: "10px",
             bottom: "10px"
           }}

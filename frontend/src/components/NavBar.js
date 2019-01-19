@@ -23,7 +23,7 @@ class NavBar extends Component {
               label="ShelterForm"
               onClick={() => history.push("/shelterform")}
             />
-            {/* <Tab label="NeedForm" onClick={() => history.push("/needform")} /> */}
+
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
             {localStorage.token ? (
               <Tab label="Logout" onClick={() => this.props.logout()} />
