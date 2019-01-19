@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   left: 50%;
   width: 18px;
   height: 18px;
-  background-color: #ffc0cb;
+  background-color: #ff0000;
   border: 2px solid #fff;
   border-radius: 100%;
   user-select: none;

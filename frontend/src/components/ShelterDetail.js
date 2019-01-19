@@ -7,7 +7,7 @@ import NeedForm from "./NeedForm";
 
 class ShelterDetails extends Component {
   componentDidMount() {
-    this.getShelterNeeds(this.props.shelter.id);
+    // this.props.getShelterNeeds(this.props.shelter.id);
   }
 
   state = {
@@ -23,7 +23,11 @@ class ShelterDetails extends Component {
       }
     })
       .then(res => res.json())
-      .then(needs => this.setState({ needs }));
+      .then(needs => {
+        console.log("needs", needs);
+
+        this.setState({ needs });
+      });
   }
 
   editShelt = () => {
@@ -39,7 +43,7 @@ class ShelterDetails extends Component {
   };
 
   render() {
-    // console.log("this.state.needs", this.state.needs);
+    console.log("this.props.shelter.needs", this.props.shelter.needs);
 
     return (
       <div>
@@ -71,14 +75,18 @@ class ShelterDetails extends Component {
           delete me
         </button>
         {this.editShelt()}
-        <ShelterNeeds needs={this.state.needs} />
+        <ShelterNeeds needs={this.props.shelter.needs} />
         <NeedForm shelterId={this.props.shelter.id} />
       </div>
     );
   }
 }
 
+const mapStateToProps = state => {
+  return { shelters: state.shelters };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   actions
 )(ShelterDetails);

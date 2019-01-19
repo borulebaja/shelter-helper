@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { actions } from "../state/actions";
-//import EditShelter from "./EditShelter";
+import NeedDetail from "./NeedDetail";
 
 class ShelterNeeds extends Component {
   // state = {
@@ -23,14 +23,11 @@ class ShelterNeeds extends Component {
   render() {
     return (
       <div>
+        <h3>Shelter Needs</h3>
         {this.props.needs.map(need => {
           return (
             <div>
-              <h3>shelter needs</h3>
-              <img src={need.image_url} alt="" width="150" height="120" />
-              <h3>{need.title}</h3>
-              <li>description:{need.description}</li>
-              <li>details:{need.details}</li>
+              <NeedDetail need={need} />
             </div>
           );
         })}

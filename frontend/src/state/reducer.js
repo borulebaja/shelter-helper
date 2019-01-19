@@ -6,6 +6,7 @@ import {
   ADD_SHELTER,
   DELETE_SHELTER,
   UPDATE_SHELTER,
+  GET_NEEDS,
   ADD_NEED,
   DELETE_NEED,
   UPDATE_NEED
@@ -50,13 +51,23 @@ export const reducer = function(currentState, action) {
       });
       history.push("/homepage");
       break;
+    case GET_NEEDS:
+      console.log(action.payload);
+      newState.needs = action.payload;
+      break;
     case ADD_NEED:
-      console.log("in reducer", action.payload);
-
-      newState.needs = [...newState.needs, action.payload];
+      let newNeed = action.payload;
+      newState.shelters = newState.shelters.map(shelter => {
+        if (shelter.id === newNeed.shelter_id) {
+          return { ...shelter, needs: [...shelter.needs, newNeed] };
+        } else {
+          return shelter;
+        }
+      });
       history.push("/homepage");
       break;
     case DELETE_NEED:
+      // remove shelters from needs
       newState.needs = newState.needs.filter(
         need => need.id !== action.payload.id
       );

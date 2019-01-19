@@ -8,7 +8,8 @@ import {
   UPDATE_SHELTER,
   ADD_NEED,
   DELETE_NEED,
-  UPDATE_NEED
+  UPDATE_NEED,
+  GET_NEEDS
 } from "./types";
 
 export const actions = {
@@ -147,6 +148,21 @@ export const actions = {
     };
   },
 
+  getShelterNeeds(shelter_id) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: GET_NEEDS, payload: result });
+        });
+    };
+  },
+
   addNeed(need, shelter_id) {
     console.log("in action", need, shelter_id);
 
@@ -181,9 +197,9 @@ export const actions = {
   },
 
   // test url in postman
-  updateNeed(need, id) {
+  updateNeed(need, id, needId) {
     return function(dispatch, getState) {
-      fetch(`http://localhost:3000/api/v1/shelters/${id}`, {
+      fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -206,9 +222,9 @@ export const actions = {
   },
 
   // test url in postman
-  deleteNeed(needId) {
+  deleteNeed(id, needId) {
     return function(dispatch, getState) {
-      fetch(`http://localhost:3000/api/v1/shelters/${needId}`, {
+      fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -218,10 +234,7 @@ export const actions = {
       })
         .then(res => res.json())
         .then(result => {
-          dispatch({
-            type: DELETE_NEED,
-            payload: result
-          });
+          dispatch({ type: DELETE_NEED, payload: result });
         });
     };
   }

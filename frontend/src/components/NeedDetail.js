@@ -38,14 +38,14 @@ class NeedDetail extends Component {
   };
 
   render() {
-    // console.log("this.state.needs", this.state.needs);
+    console.log("need", this.props);
 
     return (
       <div>
         <img src={this.props.need.image_url} alt="" width="150" height="120" />
         <h4>{this.props.need.title}</h4>
-        <li>address:{this.props.need.description}</li>
-        <li>phone:{this.props.need.details}</li>
+        <li>description:{this.props.need.description}</li>
+        <li>details:{this.props.need.details}</li>
 
         <button
           type="edit"
@@ -60,7 +60,12 @@ class NeedDetail extends Component {
         <br />
         <button
           type="delete"
-          onClick={() => this.props.deleteShelter(this.props.need.id)}
+          onClick={() =>
+            this.props.deleteNeed(
+              this.props.need.shelter_id,
+              this.props.need.id
+            )
+          }
         >
           delete need
         </button>
@@ -70,6 +75,10 @@ class NeedDetail extends Component {
     );
   }
 }
+
+// const mapStateToProps = state => {
+//   return { need: state.need };
+// };
 
 export default connect(
   null,

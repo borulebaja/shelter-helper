@@ -14,12 +14,6 @@ class MapContainer extends Component {
     zoom: 11
   };
 
-  // displayPlaces = (places) => {
-  //   return places.map((place, index) => {
-  //     return <Marker key={index} rank={index + 1} lat={place.location.lat} lng={place.location.lng} name={place.name} />;
-  //   })
-  // }
-
   render() {
     console.log(this.props);
     return (
