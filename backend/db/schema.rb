@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2019_01_10_192743) do
     t.string "image_url"
     t.string "description"
     t.string "details"
+    t.integer "quantity_needed"
+    t.integer "quantity_bought"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["shelter_id"], name: "index_needs_on_shelter_id"
