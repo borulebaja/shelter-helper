@@ -51,7 +51,6 @@ class EditNeed extends Component {
         <button
           onClick={e => {
             e.preventDefault();
-            console.log("pls saveee");
             this.props.updateNeed(this.state, this.props.shelterId);
           }}
         >

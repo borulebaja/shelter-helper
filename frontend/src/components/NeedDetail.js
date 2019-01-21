@@ -3,27 +3,18 @@ import { connect } from "react-redux";
 import { actions } from "../state/actions";
 import EditNeed from "./EditNeed";
 //import ShelterNeeds from "./ShelterNeeds";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
 class NeedDetail extends Component {
-  //   componentDidMount() {
-  //     this.getShelterNeeds(this.props.shelter.id);
-  //     console.log(this.props);
-  //   }
-
   state = {
     showEditNeedForm: false
   };
-
-  // getShelterNeeds(shelter_id) {
-  //     fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
-  //         headers: {
-  //             "Content-Type": "application/json",
-  //             Accept: "application/json"
-  //         }
-  //     })
-  //         .then(res => res.json())
-  //         .then(needs => this.setState({ needs }));
-  // }
 
   editSheltNeed = () => {
     if (this.state.showEditNeedForm) {
@@ -39,12 +30,50 @@ class NeedDetail extends Component {
 
   render() {
     return (
-      <div>
-        <img src={this.props.need.image_url} alt="" width="150" height="120" />
-        <h4>{this.props.need.title}</h4>
-        <b>Description: </b> {this.props.need.description} <br />
-        <b>Details: </b> {this.props.need.details} <br />
-        {/* { this.props.need.quantity == this.props.need.bought ? 'yay we have all our needs and hide the button to say i bought this} : <button onClick={the function to increment bought }> */}
+      <Card style={{ maxWidth: 250 }}>
+        <CardActionArea>
+          <CardMedia
+            image={this.props.need.image_url}
+            style={{ height: 150 }}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {this.props.need.title}
+            </Typography>
+            <Typography component="p">
+              <b>Description:</b> {this.props.need.description}
+            </Typography>
+            <Typography component="p">
+              <b>Details:</b> {this.props.need.details}
+            </Typography>
+            <Typography component="p">
+              <b>Quantity needed:</b> {this.props.need.quantity_needed}
+            </Typography>
+            <Typography component="p">
+              <b>Quantity bought:</b> {this.props.need.quantity_bought}
+            </Typography>
+            <button
+              onClick={() => {
+                this.props.quantityBought(
+                  this.props.need,
+                  this.props.need.shelter_id,
+                  this.props.need.id
+                );
+              }}
+            >
+              I bought one
+            </button>
+
+            <a
+              href="https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR"
+              target="_blank"
+            >
+              <img src="http://www.niftybuttons.com/amazon/amazon-button3.png" />
+            </a>
+
+            {/* { this.props.need.quantity == this.props.need.bought ? 'yay we have all our needs and hide the button to say i bought this} : <button onClick={the function to increment bought }> */}
+          </CardContent>
+        </CardActionArea>
         {localStorage.token && (
           <div>
             <button
@@ -72,8 +101,7 @@ class NeedDetail extends Component {
             {this.editSheltNeed()}
           </div>
         )}
-        {/* <ShelterNeeds needs={this.state.needs} /> */}
-      </div>
+      </Card>
     );
   }
 }

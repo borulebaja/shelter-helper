@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { actions } from "../state/actions";
 import EditShelter from "./EditShelter";
+import NeedDetail from "./NeedDetail";
 import ShelterNeeds from "./ShelterNeeds";
 import NeedForm from "./NeedForm";
 import Card from "@material-ui/core/Card";
@@ -18,24 +19,9 @@ class ShelterDetails extends Component {
   }
 
   state = {
-    showEditForm: false
-    // needs: []
+    showEditForm: false,
+    showNeeds: false
   };
-
-  // getShelterNeeds(shelter_id) {
-  //   fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json"
-  //     }
-  //   })
-  //     .then(res => res.json())
-  //     .then(needs => {
-  //       console.log("needs", needs);
-
-  //       this.setState({ needs });
-  //     });
-  // }
 
   editShelt = () => {
     if (this.state.showEditForm) {
@@ -49,32 +35,50 @@ class ShelterDetails extends Component {
     }
   };
 
+  // created new function for display needs
+  showNeeds = () => {
+    if (this.state.showNeeds) {
+      return (
+        <NeedDetail
+          currentNeed={this.props.currentNeed}
+          updateNeed={this.props.updateNeed}
+          needId={this.props.need.id}
+        />
+      );
+    }
+  };
+
   render() {
     return (
       <Card style={{ maxWidth: 250 }}>
         <CardActionArea>
           <CardMedia
             image={this.props.shelter.image_url}
-            style={{ height: 100 }}
+            style={{ height: 150 }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {this.props.shelter.name}
             </Typography>
             <Typography component="p">
-              Address: {this.props.shelter.address}
+              <b>Address:</b> {this.props.shelter.address}
             </Typography>
             <Typography component="p">
-              Phone: {this.props.shelter.phone}
+              <b>Phone:</b> {this.props.shelter.phone}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
+          <Button
+            size="small"
+            color="primary"
+            onClick={() =>
+              this.setState({
+                showNeeds: !this.state.showNeeds
+              })
+            }
+          >
+            {this.state.showNeeds ? "Hide needs" : "Show needs"}
           </Button>
         </CardActions>
 
@@ -102,8 +106,13 @@ class ShelterDetails extends Component {
             {this.editShelt()}
           </div>
         )}
-        {/* TODO toggle needs condition button */}
-        <ShelterNeeds needs={this.props.shelter.needs} />
+
+        <div>
+          {this.state.showNeeds && (
+            <ShelterNeeds needs={this.props.shelter.needs} />
+          )}
+        </div>
+
         {localStorage.token && <NeedForm shelterId={this.props.shelter.id} />}
       </Card>
     );
