@@ -1,5 +1,5 @@
 class Api::V1::ApplicationController < ApplicationController
-    before_action :check_authentication, except: [:index, :create, :show]
+    before_action :check_authentication, except: [:index, :create, :show, :update, :destroy]
 
         def check_authentication
             if !logged_in_user

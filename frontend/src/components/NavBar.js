@@ -7,6 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 //import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import history from "../state/history";
+import Typography from "@material-ui/core/Typography";
 
 class NavBar extends Component {
   // handleChange()
@@ -14,15 +15,29 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static">
+        <AppBar position="static" style={{ "background-color": "green" }}>
           <Toolbar>
-            <h3 onClick={() => history.push("/")}> Homeless Shelters </h3>
-            <Tab label="Shelters" onClick={() => history.push("/")} />
-            {/* // users should be logged in to view form */}
+            <Typography
+              color="inherit"
+              variant="h4"
+              onClick={() => history.push("/")}
+            >
+              {" "}
+              Homeless Shelters{" "}
+            </Typography>
             <Tab
-              label="ShelterForm"
-              onClick={() => history.push("/shelterform")}
+              label="Shelters"
+              style={{ "text-transform": "capitalize" }}
+              onClick={() => history.push("/")}
             />
+            {/* // users should be logged in to view form */}
+            {localStorage.token && (
+              <Tab
+                label="ShelterForm"
+                onClick={() => history.push("/shelterform")}
+              />
+            )}
+
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
             {localStorage.token ? (
               <Tab label="Logout" onClick={() => this.props.logout()} />

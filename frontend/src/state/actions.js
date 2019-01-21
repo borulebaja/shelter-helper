@@ -5,7 +5,11 @@ import {
   GET_SHELTERS,
   ADD_SHELTER,
   DELETE_SHELTER,
-  UPDATE_SHELTER
+  UPDATE_SHELTER,
+  ADD_NEED,
+  DELETE_NEED,
+  UPDATE_NEED,
+  GET_NEEDS
 } from "./types";
 
 export const actions = {
@@ -31,6 +35,7 @@ export const actions = {
         });
     };
   },
+
   signUp(user) {
     //console.log("AcTion!!!");
     return function(dispatch, getState) {
@@ -90,10 +95,7 @@ export const actions = {
       })
         .then(res => res.json())
         .then(result => {
-          dispatch({
-            type: ADD_SHELTER,
-            payload: result
-          });
+          dispatch({ type: ADD_SHELTER, payload: result });
         });
     };
   },
@@ -136,10 +138,120 @@ export const actions = {
       })
         .then(res => res.json())
         .then(result => {
-          dispatch({
-            type: DELETE_SHELTER,
-            payload: result
-          });
+          dispatch({ type: DELETE_SHELTER, payload: result });
+        });
+    };
+  },
+
+  getShelterNeeds(shelter_id) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: GET_NEEDS, payload: result });
+        });
+    };
+  },
+
+  addNeed(need, shelter_id) {
+    console.log("in action", need, shelter_id);
+
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${shelter_id}/needs`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          need: {
+            title: need.title,
+            image_url: need.image_url,
+            description: need.description,
+            detail: need.details,
+            shelter_id: shelter_id
+          }
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          console.log("after posting to backend", result);
+
+          dispatch({ type: ADD_NEED, payload: result });
+        });
+    };
+  },
+
+  updateNeed(need, id, needId) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          need: {
+            title: need.title,
+            description: need.description,
+            details: need.details
+          }
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: UPDATE_NEED, payload: result });
+        });
+    };
+  },
+
+  // TODO new function to increment the quantity bought of a need
+  // copy paste the updateNeed function and include in body
+  // bought: need.bought++
+
+  quantityBought(need, id, needId) {
+    return function(dispatch, getState) {
+      let newQuantity = need.quantity_bought + 1;
+      console.log(newQuantity);
+      fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          quantity_bought: newQuantity
+        })
+      })
+        .then(res => res.json())
+        .then(result => {
+          console.log(result);
+          dispatch({ type: UPDATE_NEED, payload: result });
+        });
+    };
+  },
+
+  deleteNeed(id, needId) {
+    return function(dispatch, getState) {
+      fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+      })
+        .then(res => res.json())
+        .then(result => {
+          dispatch({ type: DELETE_NEED, payload: result });
         });
     };
   }

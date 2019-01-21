@@ -8,7 +8,7 @@ class Api::V1::SheltersController < Api::V1::ApplicationController
     end
     
     def index
-        render json: Shelter.all
+        render json: Shelter.all, include: [:needs]
     end
     
     def show

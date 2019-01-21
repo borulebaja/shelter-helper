@@ -6,6 +6,8 @@ class CreateNeeds < ActiveRecord::Migration[5.2]
       t.string :image_url
       t.string :description
       t.string :details
+      t.integer :quantity_needed
+      t.integer :quantity_bought
       t.timestamps
     end
   end

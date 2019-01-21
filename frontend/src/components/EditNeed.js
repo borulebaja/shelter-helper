@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { actions } from "../state/actions";
 import { connect } from "react-redux";
 
-class EditShelter extends Component {
+class EditNeed extends Component {
   constructor() {
     super();
     this.state = {
-      name: "",
-      address: "",
-      phone: ""
+      title: "",
+      description: "",
+      details: ""
     };
   }
 
@@ -20,38 +20,38 @@ class EditShelter extends Component {
   render() {
     return (
       <form>
-        <h3>Edit Shelter</h3>
+        <h3>Edit Need</h3>
         <div>
-          <label>Shelter Name</label>
+          <label>Need Title</label>
           <input
-            name="name"
+            name="title"
             type="text"
-            value={this.state.name}
+            value={this.state.title}
             onChange={e => this.handleChange(e)}
           />
         </div>
         <div>
-          <label>Address</label>
+          <label>Description</label>
           <input
-            name="address"
+            name="description"
             type="text"
-            value={this.state.address}
+            value={this.state.description}
             onChange={e => this.handleChange(e)}
           />
         </div>
         <div>
-          <label>Phone</label>
+          <label>Details</label>
           <input
-            name="phone"
+            name="details"
             type="text"
-            value={this.state.phone}
+            value={this.state.details}
             onChange={e => this.handleChange(e)}
           />
         </div>
         <button
           onClick={e => {
             e.preventDefault();
-            this.props.updateShelter(this.state, this.props.shelterId);
+            this.props.updateNeed(this.state, this.props.shelterId);
           }}
         >
           save
@@ -64,4 +64,4 @@ class EditShelter extends Component {
 export default connect(
   null,
   actions
-)(EditShelter);
+)(EditNeed);

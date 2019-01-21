@@ -1,36 +1,33 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { actions } from "../state/actions";
-//import EditShelter from "./EditShelter";
+import NeedDetail from "./NeedDetail";
 
 class ShelterNeeds extends Component {
   // state = {
-  //     showEditNeed: false
+  //     showEditNeedForm: false
   // };
 
   // editSheltNeed = () => {
-  //     if (this.state.showEditForm) {
+  //     if (this.state.showEditNeedForm) {
   //         return (
-  //             <EditShelterNeed
-  //                 currentShelterNeed={this.props.currentNeed}
-  //                 updateShelterNeed={this.props.updateNeed}
-  //                 shelterNeedId={this.props.shelter.id}
+  //             <EditShelterNeed (create edit need component????)
+  //                 currentShelterNeed={this.props.currentShelterNeed}
+  //                 updateShelterNeed={this.props.updateShelterNeed}
+  //                 shelterNeedId={this.props.shelterNeed.id}
   //             />
   //         );
   //     }
   // };
 
   render() {
-    console.log(this.props.needs);
     return (
       <div>
+        <h3>Shelter Needs</h3>
         {this.props.needs.map(need => {
           return (
             <div>
-              <h3>{need.title}</h3>
-              <img src={need.image_url} alt="" width="150" height="120" />
-              <li>description:{need.description}</li>
-              <li>details:{need.details}</li>
+              <NeedDetail need={need} />
             </div>
           );
         })}
@@ -45,7 +42,7 @@ class ShelterNeeds extends Component {
         {/* <button
           type="edit"
           onClick={() =>
-            this.setState({ showEditForm: !this.state.showEditForm })
+            this.setState({ showEditNeedForm: !this.state.showEditNeedForm })
           }
         >
           edit me
@@ -53,11 +50,11 @@ class ShelterNeeds extends Component {
         <br />
         <button
           type="delete"
-          onClick={() => this.props.deleteShelter(this.props.shelter.id)}
+          onClick={() => this.props.deleteNeed(this.props.need.id)}
         >
           delete me
         </button>
-        {this.editShelt()} */}
+        {this.editSheltNeed()} */}
       </div>
     );
   }
