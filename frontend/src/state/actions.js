@@ -15,7 +15,6 @@ import {
 export const actions = {
   login(user) {
     return function(dispatch, getState) {
-      console.log("are they lying to me", user);
       fetch("http://localhost:3000/api/v1/auth/", {
         method: "POST",
         headers: {
@@ -30,7 +29,7 @@ export const actions = {
         .then(result => {
           console.log(result);
           localStorage.setItem("token", result.token);
-          localStorage.setItem("userId", result.user.id);
+          // localStorage.setItem("userId", result.user.id);
           dispatch({ type: LOGIN, payload: result });
         });
     };

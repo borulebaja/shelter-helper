@@ -15,11 +15,13 @@ class MapContainer extends Component {
   };
 
   render() {
+    console.log(GoogleMapReact);
+
     return (
       <div>
         <Card
           style={{
-            height: "60vh",
+            height: "85vh",
             width: "30%",
             position: "fixed",
             right: "10px",

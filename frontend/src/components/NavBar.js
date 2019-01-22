@@ -30,7 +30,7 @@ class NavBar extends Component {
               onClick={() => history.push("/")}
             />
             {/* // users should be logged in to view form */}
-            {localStorage.token && (
+            {this.props.currentUser && (
               <Tab
                 label="ShelterForm"
                 onClick={() => history.push("/shelterform")}
@@ -38,7 +38,7 @@ class NavBar extends Component {
             )}
 
             <Tab label="SignUp" onClick={() => history.push("/signup")} />
-            {localStorage.token ? (
+            {this.props.currentUser !== null ? (
               <Tab label="Logout" onClick={() => this.props.logout()} />
             ) : (
               <Tab label="Login" onClick={() => history.push("/login")} />
@@ -50,7 +50,11 @@ class NavBar extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return { currentUser: state.currentUser };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   actions
 )(NavBar);
