@@ -1,22 +1,44 @@
 import React, { Component } from "react";
-import GoogleMapReact from "google-map-react";
+import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import { GoogleMapsApiKey } from "../Api.js";
-import Marker from "../components/Marker";
 import Card from "@material-ui/core/Card";
+// import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
 
-class MapContainer extends Component {
-  static defaultProps = {
-    center: {
-      lat: 29.7588788,
-      lng: -95.3638645
-    },
-    zoom: 11
+// const mapStyles = {
+//   width: "30%",
+//   height: "50%",
+//   position: "absolute",
+//   right: "10px",
+//   bottom: "10px"
+// };
+
+export class MapContainer extends Component {
+  state = {
+    showingInfoWindow: false, //Hides or the shows the infoWindow
+    activeMarker: {}, //Shows the active marker upon click
+    selectedPlace: {} //Shows the infoWindow to the selected place upon a marker
+  };
+
+  onMarkerClick = (props, marker, e) => {
+    console.log(props);
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  };
+
+  onClose = props => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      });
+    }
   };
 
   render() {
-    console.log(GoogleMapReact);
-
     return (
       <div>
         <Card
@@ -28,20 +50,39 @@ class MapContainer extends Component {
             bottom: "10px"
           }}
         >
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: GoogleMapsApiKey.apiKey }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
+          <Map
+            google={this.props.google}
+            zoom={14}
+            initialCenter={
+              { lat: 29.7588788, lng: -95.3638645 } // style={mapStyles}
+            }
           >
             {this.props.shelters.map(shelter => (
               <Marker
+                onClick={this.onMarkerClick}
                 key={shelter.id}
-                text={shelter.name}
-                lat={shelter.latitude}
-                lng={shelter.longitude}
+                name={shelter.name}
+                address={shelter.address}
+                phone={shelter.phone}
+                position={{ lat: shelter.latitude, lng: shelter.longitude }}
               />
             ))}
-          </GoogleMapReact>
+            <InfoWindow
+              marker={this.state.activeMarker}
+              visible={this.state.showingInfoWindow}
+              onClose={this.onClose}
+            >
+              <div>
+                <h3>
+                  {this.state.selectedPlace.name}
+                  <br />
+                  {this.state.selectedPlace.address}
+                  <br />
+                  {this.state.selectedPlace.phone}
+                </h3>
+              </div>
+            </InfoWindow>
+          </Map>
         </Card>
       </div>
     );
@@ -51,7 +92,12 @@ class MapContainer extends Component {
 const mapStateToProps = state => {
   return { shelters: state.shelters };
 };
-export default connect(
-  mapStateToProps,
-  null
-)(MapContainer);
+
+export default GoogleApiWrapper({
+  apiKey: GoogleMapsApiKey.apiKey
+})(
+  connect(
+    mapStateToProps,
+    null
+  )(MapContainer)
+);
