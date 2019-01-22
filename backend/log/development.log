@@ -19234,3 +19234,1503 @@ Processing by Api::V1::SheltersController#index as JSON
 Completed 200 OK in 268ms (Views: 247.9ms | ActiveRecord: 9.0ms)
 
 
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:21:32 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 210ms (Views: 193.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:22:04 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 74ms (Views: 64.8ms | ActiveRecord: 5.4ms)
+
+
+Started PATCH "/api/v1/shelters/1/needs/1" for 127.0.0.1 at 2019-01-21 14:22:17 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>6, "shelter_id"=>"1", "id"=>"1", "need"=>{"quantity_bought"=>6}}
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (4.4ms)[0m  [1m[33mUPDATE "needs" SET "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_bought", 6], ["updated_at", "2019-01-21 20:22:17.156922"], ["id", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 40ms (Views: 1.2ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:24:45 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (5.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 319ms (Views: 293.3ms | ActiveRecord: 12.8ms)
+
+
+Started PATCH "/api/v1/shelters/1/needs/1" for 127.0.0.1 at 2019-01-21 14:24:54 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>7, "shelter_id"=>"1", "id"=>"1", "need"=>{"quantity_bought"=>7}}
+  [1m[36mNeed Load (0.9ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (2.8ms)[0m  [1m[33mUPDATE "needs" SET "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_bought", 7], ["updated_at", "2019-01-21 20:24:54.431605"], ["id", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 27ms (Views: 0.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:25:29 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 121ms (Views: 96.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:25:35 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:29:22 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (12.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.0ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 160ms (Views: 132.9ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 14:30:32 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:08:46 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 117ms (Views: 89.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:09:09 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (13.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.0ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 224ms (Views: 186.6ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:10:13 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (13.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (229.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (6.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 551ms (Views: 286.2ms | ActiveRecord: 254.6ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:10:36 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (6.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 137ms (Views: 116.5ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:10:39 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:11:45 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (3.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 126ms (Views: 107.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:12:47 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 79ms (Views: 64.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:13:32 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (3.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 261ms (Views: 244.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:14:27 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (4.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 126ms (Views: 104.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:14:40 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 18:14:47 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 3.6ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateNeeds (20190110192743)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "needs"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192743"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateShelters (20190110192722)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "shelters"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192722"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190110192640)
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192640"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190110192640)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190110192640_create_users.rb:3
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192640_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192640"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateShelters (20190110192722)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "shelters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "image_url" varchar, "latitude" decimal(15,13), "longitude" decimal(15,13), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192722_create_shelters.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_shelters_on_user_id" ON "shelters" ("user_id")[0m
+  ↳ db/migrate/20190110192722_create_shelters.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192722"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateNeeds (20190110192743)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (20.9ms)[0m  [1m[35mCREATE TABLE "needs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "shelter_id" integer, "title" varchar, "image_url" varchar, "description" varchar, "details" varchar, "quantity_needed" integer, "quantity_bought" integer, "shopping_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192743_create_needs.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_needs_on_shelter_id" ON "needs" ("shelter_id")[0m
+  ↳ db/migrate/20190110192743_create_needs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192743"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateNeeds (20190110192743)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "needs"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192743"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateShelters (20190110192722)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "shelters"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192722"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190110192640)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190110192640"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190110192640)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190110192640_create_users.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192640_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192640"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateShelters (20190110192722)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "shelters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "address" varchar, "phone" varchar, "image_url" varchar, "latitude" decimal(15,13), "longitude" decimal(15,13), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192722_create_shelters.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_shelters_on_user_id" ON "shelters" ("user_id")[0m
+  ↳ db/migrate/20190110192722_create_shelters.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192722"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateNeeds (20190110192743)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "needs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "shelter_id" integer, "title" varchar, "image_url" varchar, "description" varchar, "details" varchar, "quantity_needed" integer, "quantity_bought" integer, "shopping_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190110192743_create_needs.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_needs_on_shelter_id" ON "needs" ("shelter_id")[0m
+  ↳ db/migrate/20190110192743_create_needs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190110192743"]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alan"], ["email", "alan@example.com"], ["password_digest", "$2a$10$i/zMBTWQpuIiClR.2iTov.xXyL83i4lPkSaTbuVo2YKI8cSAF4a1G"], ["created_at", "2019-01-22 01:52:11.472924"], ["updated_at", "2019-01-22 01:52:11.472924"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sheba"], ["email", "sheba@example.com"], ["password_digest", "$2a$10$pn8XZn7UqtgHqJAKzQKaGeSpBc0pPV8M3wZutT4KPlobPTlAcmaG2"], ["created_at", "2019-01-22 01:52:11.562088"], ["updated_at", "2019-01-22 01:52:11.562088"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Janu"], ["email", "janu@example.com"], ["password_digest", "$2a$10$bTKrZ6eUXWc7tEgje1bR4ekdu9E7IH2r94/Ca4kXMEbZfmzaTY/36"], ["created_at", "2019-01-22 01:52:11.647815"], ["updated_at", "2019-01-22 01:52:11.647815"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hannah"], ["email", "hannah@example.com"], ["password_digest", "$2a$10$FknpqUO4WzhVb5oL3G8flu8ArbBNXGUb8FV7UfmVBJGwlmVXqzL6a"], ["created_at", "2019-01-22 01:52:11.733800"], ["updated_at", "2019-01-22 01:52:11.733800"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "brabra"], ["email", "brabra@example.com"], ["password_digest", "$2a$10$5TzXryWCEjTaYUfc5kab4.gblwl3T7mVMsfjgtP48cAppKec1MmDC"], ["created_at", "2019-01-22 01:52:11.816753"], ["updated_at", "2019-01-22 01:52:11.816753"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mShelter Create (0.7ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spirit Key Transitional Housing Cypress"], ["address", "13617 Kaltenbrun Rd\nHouston, TX 77086"], ["phone", "(281) 971-0014"], ["image_url", "https://www.shelterlistings.org/images/shelters/35971_1364357023.jpg"], ["user_id", 1], ["created_at", "2019-01-22 01:52:12.530640"], ["updated_at", "2019-01-22 01:52:12.530640"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mShelter Create (1.7ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aable Starting Point"], ["description", "Affordable temporary housing for women and men at separate locations. "], ["address", "602 Girard St, Houston, TX 77007"], ["phone", "(713) 575-5033"], ["image_url", "https://www.shelterlistings.org/images/shelters/37297_aable1.jpg"], ["latitude", 29.7676303], ["longitude", -95.3638768], ["user_id", 2], ["created_at", "2019-01-22 01:52:13.166636"], ["updated_at", "2019-01-22 01:52:13.166636"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Star Of Hope Mission - Women And Family Emergency Shelter"], ["description", "Women emergency shelter, family emergency shelter, medical clinic, nursery and pre-school area."], ["address", "419 Dowling, Houston, TX 77003"], ["phone", "(713) 222-2220"], ["image_url", "https://www.shelterlistings.org/images/shelters/19784_StarofHopeMission3.jpg"], ["latitude", 29.754127], ["longitude", -95.349331], ["user_id", 3], ["created_at", "2019-01-22 01:52:13.915843"], ["updated_at", "2019-01-22 01:52:13.915843"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Brigids Hope at The Beacon"], ["description", "Provides a transitional living program with a support system for women, incarcerated and released or on parole"], ["address", "1117 Texas Ave, Houston, TX 77002"], ["phone", "(713) 222-9737"], ["image_url", "https://www.shelterlistings.org/images/shelters/25125_thebeacon.jpg"], ["latitude", 29.7589572], ["longitude", -95.3609124], ["user_id", 4], ["created_at", "2019-01-22 01:52:14.596222"], ["updated_at", "2019-01-22 01:52:14.596222"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "New Hope Housing, Inc."], ["description", "Section 8 permanent housing, affordable housing for veterans, elderly, students, minor disabilites, individuals overcoming sustance abuse, working poor and formerly homeless "], ["address", "1414 Congress\nHouston, TX 77002"], ["phone", "(713) 224-1414"], ["image_url", "https://www.shelterlistings.org/images/shelters/37828_x_logo.png"], ["user_id", 5], ["created_at", "2019-01-22 01:52:15.163694"], ["updated_at", "2019-01-22 01:52:15.163694"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Star of Hope Mission"], ["description", "Homeless Shelter, transitional housing, volunteer opportunities "], ["address", "1811 Ruiz St, Houston, TX 77002"], ["phone", "(713)-227-8900"], ["image_url", "https://www.shelterlistings.org/images/shelters/19781_StarofHopeMission.jpg"], ["latitude", 29.7603560612245], ["longitude", -95.3518844693878], ["user_id", 1], ["created_at", "2019-01-22 01:52:15.778000"], ["updated_at", "2019-01-22 01:52:15.778000"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mShelter Create (1.0ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Covenant House Texas"], ["description", "30-day Maximum for Emergency Shelter, 12 month max. for transitional homeless youth up to age 21 with no history of fire-setting or sexual offenses "], ["address", "1111 Lovett Blvd, Houston, TX 77006"], ["phone", "(713) 523-2231"], ["image_url", "https://www.shelterlistings.org/images/shelters/20199_convenant.jpg"], ["latitude", 29.7432909908256], ["longitude", -95.3928010886895], ["user_id", 2], ["created_at", "2019-01-22 01:52:16.469037"], ["updated_at", "2019-01-22 01:52:16.469037"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Madge Bush Transitional"], ["description", "Apartment complex for homeless single women with 1-2 children in their custody."], ["address", "3410 Drew Street, Houston, TX 77004"], ["phone", "(713) 652-3830"], ["image_url", "https://tpc.googlesyndication.com/daca_images/simgad/5053207377208705477"], ["latitude", 29.7320456875506], ["longitude", -95.3516594017836], ["user_id", 3], ["created_at", "2019-01-22 01:52:17.158790"], ["updated_at", "2019-01-22 01:52:17.158790"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Santa Maria Hostel, Inc."], ["description", "Treatment Center, supportive housing, halfway house, women with children, female veteran housing, court liaison service, recovery support service"], ["address", "2605 Parker Road, Houston, TX 77009"], ["phone", "(713) 691-0900"], ["image_url", "https://www.shelterlistings.org/images/shelters/22694_santamaria.jpg"], ["latitude", 29.8595536063434], ["longitude", -95.3452350820778], ["user_id", 4], ["created_at", "2019-01-22 01:52:17.846914"], ["updated_at", "2019-01-22 01:52:17.846914"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lord of the Streets Episcopal Church"], ["description", "Non Profit Organization that provides day shelter, drop in shelter, crisis management, medical and dental assistance"], ["address", "3401 Fannin St\nHouston, TX 77004"], ["phone", "(713) 526-0311"], ["image_url", "https://www.shelterlistings.org/images/shelters/25123_lordofthestreet.jpg"], ["user_id", 5], ["created_at", "2019-01-22 01:52:18.425536"], ["updated_at", "2019-01-22 01:52:18.425536"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Life Center for the Homeless"], ["description", "A place that provides shelter, food, clothing, spiritual guidance and many more for people in need"], ["address", "4516 Old Yale St.\nHouston, TX 77018"], ["phone", "(832) 292-3295"], ["image_url", "https://www.shelterlistings.org/images/shelters/37771_5.JPG"], ["latitude", 29.8312890837715], ["longitude", -95.4026996990251], ["user_id", 1], ["created_at", "2019-01-22 01:52:19.045284"], ["updated_at", "2019-01-22 01:52:19.045284"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Project Hope Recovery Center"], ["description", "Our purpose is to provide men and women with an effective and comprehensive Christian faith-based solution to life-controlling problems."], ["address", "7805 Kimble St, Houston, TX 77017"], ["phone", "(877) 491-3816"], ["image_url", "https://i.vimeocdn.com/video/580518905_780x439.jpg"], ["latitude", 29.6981138125], ["longitude", -95.2830413125], ["user_id", 2], ["created_at", "2019-01-22 01:52:19.679407"], ["updated_at", "2019-01-22 01:52:19.679407"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[36mShelter Create (2.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Veterans Progress & Recovery Services"], ["description", "Transitional housing for veterans."], ["address", "7622 Boggess Rd, Houston, TX 77016"], ["phone", "(832) 253-7405"], ["image_url", "http://militarybenefits.info/wp-content/uploads/2018/01/american-flag-750x483.jpg"], ["latitude", 29.8615434972288], ["longitude", -95.2910818197227], ["user_id", 3], ["created_at", "2019-01-22 01:52:20.294567"], ["updated_at", "2019-01-22 01:52:20.294567"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mShelter Create (1.0ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Oasis of Houston"], ["description", "Affordable housing for veterans"], ["address", "4607 Cashel Castle Dr., Houston, TX 77069"], ["phone", "(281) 919-6144"], ["image_url", "https://pbs.twimg.com/profile_images/649681038164103168/RR8q2RV4.jpg"], ["user_id", 4], ["created_at", "2019-01-22 01:52:20.924858"], ["updated_at", "2019-01-22 01:52:20.924858"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Salvation Army Of Houston for Women"], ["description", "Transitional housing for single women who have completed an alcohol/drug detoxification program."], ["address", "4607 Cashel Castle Dr., Houston, TX 77069"], ["phone", "(713) 223-8889"], ["image_url", "http://salvationarmyhouston.org/wp-content/uploads/sites/5/2016/07/SAWA-red-logo.png"], ["user_id", 5], ["created_at", "2019-01-22 01:52:21.585248"], ["updated_at", "2019-01-22 01:52:21.585248"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mNeed Create (0.5ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 1], ["title", "Blanket"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/91i9s0wUuyL._SL1500_.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 40], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 01:52:21.611747"], ["updated_at", "2019-01-22 01:52:21.611747"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 1], ["title", "Canned Food"], ["image_url", "https://i5.walmartimages.com/asr/5f94a53f-7c20-49d6-ad0f-25492a5ad258_1.af808da77f19dad36484d163b886128e.jpeg"], ["description", "(3 Pack) Chef Boyardee Beef Ravioli, 15 oz, 4 Pack"], ["details", "Available everywhere"], ["quantity_needed", 30], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 01:52:21.618586"], ["updated_at", "2019-01-22 01:52:21.618586"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mNeed Create (0.7ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 1], ["title", "Canned Food"], ["image_url", "https://www.mountainhouse.com/mm5/graphics/00000001/products/30111_Chicken_a_la_King.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 15], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 01:52:21.623500"], ["updated_at", "2019-01-22 01:52:21.623500"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mNeed Create (0.6ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 2], ["title", "Bottled Water"], ["image_url", "http://oasisanimalsanctuary.info/wp-content/uploads/2018/10/publix-purified-water-pure-life-ar-pure-purified-water-fl-oz-publix-purified-water-price-does-publix-purified-water-have-chlorine.jpg"], ["description", "Nestlé® Pure Life® Purified Water 32-16.9 fl. oz. Bottles"], ["details", "Available everywhere"], ["quantity_needed", 50], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 01:52:21.629974"], ["updated_at", "2019-01-22 01:52:21.629974"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mNeed Create (0.7ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 2], ["title", "Blanket"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/91i9s0wUuyL._SL1500_.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 25], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 01:52:21.635221"], ["updated_at", "2019-01-22 01:52:21.635221"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+  [1m[36mNeed Create (0.5ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 3], ["title", "Canned Food"], ["image_url", "https://www.mountainhouse.com/mm5/graphics/00000001/products/30111_Chicken_a_la_King.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 20], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 01:52:21.640723"], ["updated_at", "2019-01-22 01:52:21.640723"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:74
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 3], ["title", "Canned Food"], ["image_url", "https://i5.walmartimages.com/asr/5f94a53f-7c20-49d6-ad0f-25492a5ad258_1.af808da77f19dad36484d163b886128e.jpeg"], ["description", "(3 Pack) Chef Boyardee Beef Ravioli, 15 oz, 4 Pack"], ["details", "Available everywhere"], ["quantity_needed", 13], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 01:52:21.644457"], ["updated_at", "2019-01-22 01:52:21.644457"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 4], ["title", "Bottled Water"], ["image_url", "http://oasisanimalsanctuary.info/wp-content/uploads/2018/10/publix-purified-water-pure-life-ar-pure-purified-water-fl-oz-publix-purified-water-price-does-publix-purified-water-have-chlorine.jpg"], ["description", "Nestlé® Pure Life® Purified Water 32-16.9 fl. oz. Bottles"], ["details", "Available everywhere"], ["quantity_needed", 50], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 01:52:21.648341"], ["updated_at", "2019-01-22 01:52:21.648341"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 20:08:53 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rack-cors-1.0.2/lib/rack/cors.rb:97
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.0ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 11]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 12]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 13]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 14]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 15]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 157ms (Views: 124.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 20:12:48 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 11]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 12]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 13]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 14]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 15]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 111ms (Views: 92.1ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 20:13:13 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 11]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 12]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 13]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 14]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 15]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 20:14:39 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (4.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 11]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 12]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 13]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 14]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 15]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 214ms (Views: 197.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-21 20:14:46 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 1]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 2]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 3]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 4]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 5]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 6]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 7]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 8]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 9]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 10]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 11]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 12]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 13]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 14]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 15]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 4.4ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mShelter Load (1.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.8ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.6ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.4ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mShelter Destroy (0.6ms)[0m  [1m[31mDELETE FROM "shelters" WHERE "shelters"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.4ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.4ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.6ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.4ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.5ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.5ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.5ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mNeed Destroy (0.5ms)[0m  [1m[31mDELETE FROM "needs" WHERE "needs"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alan"], ["email", "alan@example.com"], ["password_digest", "$2a$10$ZxhRFCZ7tLtbU8Gl3egMC.EILzDTU96NjZuxXVJqWVP82eYood25C"], ["created_at", "2019-01-22 02:22:35.175526"], ["updated_at", "2019-01-22 02:22:35.175526"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sheba"], ["email", "sheba@example.com"], ["password_digest", "$2a$10$u0t3612eUf1zKaLoYxu8BuBf2LWXRENYd560kDOMiP8pIg6XkX9Im"], ["created_at", "2019-01-22 02:22:35.259854"], ["updated_at", "2019-01-22 02:22:35.259854"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Janu"], ["email", "janu@example.com"], ["password_digest", "$2a$10$J7NCh6zhNZu/YdE98ec5ne5yuZmispnxYnO95ZspwdKFwb76q9Qwm"], ["created_at", "2019-01-22 02:22:35.346888"], ["updated_at", "2019-01-22 02:22:35.346888"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hannah"], ["email", "hannah@example.com"], ["password_digest", "$2a$10$9nfPOmctsMV6r04VZ85brugNzIpIjONGMHH5saLJkuSOGJVhyCXXi"], ["created_at", "2019-01-22 02:22:35.429453"], ["updated_at", "2019-01-22 02:22:35.429453"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "brabra"], ["email", "brabra@example.com"], ["password_digest", "$2a$10$AatLOmukUD7bruUN56arledfcePKwo.3GhgYbJeJ4WvRg.oPzRhFS"], ["created_at", "2019-01-22 02:22:35.523028"], ["updated_at", "2019-01-22 02:22:35.523028"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mShelter Create (1.0ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spirit Key Transitional Housing Cypress"], ["address", "13617 Kaltenbrun Rd\nHouston, TX 77086"], ["phone", "(281) 971-0014"], ["image_url", "https://www.shelterlistings.org/images/shelters/35971_1364357023.jpg"], ["user_id", 6], ["created_at", "2019-01-22 02:22:36.203304"], ["updated_at", "2019-01-22 02:22:36.203304"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mShelter Create (1.0ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aable Starting Point"], ["description", "Affordable temporary housing for women and men at separate locations. "], ["address", "602 Girard St, Houston, TX 77007"], ["phone", "(713) 575-5033"], ["image_url", "https://www.shelterlistings.org/images/shelters/37297_aable1.jpg"], ["latitude", 29.7676303], ["longitude", -95.3638768], ["user_id", 7], ["created_at", "2019-01-22 02:22:36.827437"], ["updated_at", "2019-01-22 02:22:36.827437"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mShelter Create (0.7ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Star Of Hope Mission - Women And Family Emergency Shelter"], ["description", "Women emergency shelter, family emergency shelter, medical clinic, nursery and pre-school area."], ["address", "419 Dowling, Houston, TX 77003"], ["phone", "(713) 222-2220"], ["image_url", "https://www.shelterlistings.org/images/shelters/19784_StarofHopeMission3.jpg"], ["latitude", 29.754127], ["longitude", -95.349331], ["user_id", 8], ["created_at", "2019-01-22 02:22:37.605289"], ["updated_at", "2019-01-22 02:22:37.605289"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Brigids Hope at The Beacon"], ["description", "Provides a transitional living program with a support system for women, incarcerated and released or on parole"], ["address", "1117 Texas Ave, Houston, TX 77002"], ["phone", "(713) 222-9737"], ["image_url", "https://www.shelterlistings.org/images/shelters/25125_thebeacon.jpg"], ["latitude", 29.7589572], ["longitude", -95.3609124], ["user_id", 9], ["created_at", "2019-01-22 02:22:38.294240"], ["updated_at", "2019-01-22 02:22:38.294240"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mShelter Create (1.0ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "New Hope Housing, Inc."], ["description", "Section 8 permanent housing, affordable housing for veterans, elderly, students, minor disabilites, individuals overcoming sustance abuse, working poor and formerly homeless "], ["address", "1414 Congress\nHouston, TX 77002"], ["phone", "(713) 224-1414"], ["image_url", "https://www.shelterlistings.org/images/shelters/37828_x_logo.png"], ["user_id", 10], ["created_at", "2019-01-22 02:22:39.070293"], ["updated_at", "2019-01-22 02:22:39.070293"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Star of Hope Mission"], ["description", "Homeless Shelter, transitional housing, volunteer opportunities "], ["address", "1811 Ruiz St, Houston, TX 77002"], ["phone", "(713)-227-8900"], ["image_url", "https://www.shelterlistings.org/images/shelters/19781_StarofHopeMission.jpg"], ["latitude", 29.7603560612245], ["longitude", -95.3518844693878], ["user_id", 6], ["created_at", "2019-01-22 02:22:39.686233"], ["updated_at", "2019-01-22 02:22:39.686233"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Covenant House Texas"], ["description", "30-day Maximum for Emergency Shelter, 12 month max. for transitional homeless youth up to age 21 with no history of fire-setting or sexual offenses "], ["address", "1111 Lovett Blvd, Houston, TX 77006"], ["phone", "(713) 523-2231"], ["image_url", "https://www.shelterlistings.org/images/shelters/20199_convenant.jpg"], ["latitude", 29.7432909908256], ["longitude", -95.3928010886895], ["user_id", 7], ["created_at", "2019-01-22 02:22:40.362125"], ["updated_at", "2019-01-22 02:22:40.362125"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Madge Bush Transitional"], ["description", "Apartment complex for homeless single women with 1-2 children in their custody."], ["address", "3410 Drew Street, Houston, TX 77004"], ["phone", "(713) 652-3830"], ["image_url", "https://tpc.googlesyndication.com/daca_images/simgad/5053207377208705477"], ["latitude", 29.7320456875506], ["longitude", -95.3516594017836], ["user_id", 8], ["created_at", "2019-01-22 02:22:41.020581"], ["updated_at", "2019-01-22 02:22:41.020581"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Santa Maria Hostel, Inc."], ["description", "Treatment Center, supportive housing, halfway house, women with children, female veteran housing, court liaison service, recovery support service"], ["address", "2605 Parker Road, Houston, TX 77009"], ["phone", "(713) 691-0900"], ["image_url", "https://www.shelterlistings.org/images/shelters/22694_santamaria.jpg"], ["latitude", 29.8595536063434], ["longitude", -95.3452350820778], ["user_id", 9], ["created_at", "2019-01-22 02:22:41.750607"], ["updated_at", "2019-01-22 02:22:41.750607"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lord of the Streets Episcopal Church"], ["description", "Non Profit Organization that provides day shelter, drop in shelter, crisis management, medical and dental assistance"], ["address", "3401 Fannin St\nHouston, TX 77004"], ["phone", "(713) 526-0311"], ["image_url", "https://www.shelterlistings.org/images/shelters/25123_lordofthestreet.jpg"], ["user_id", 10], ["created_at", "2019-01-22 02:22:42.360572"], ["updated_at", "2019-01-22 02:22:42.360572"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Life Center for the Homeless"], ["description", "A place that provides shelter, food, clothing, spiritual guidance and many more for people in need"], ["address", "4516 Old Yale St.\nHouston, TX 77018"], ["phone", "(832) 292-3295"], ["image_url", "https://www.shelterlistings.org/images/shelters/37771_5.JPG"], ["latitude", 29.8312890837715], ["longitude", -95.4026996990251], ["user_id", 6], ["created_at", "2019-01-22 02:22:43.020449"], ["updated_at", "2019-01-22 02:22:43.020449"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[36mShelter Create (0.8ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Project Hope Recovery Center"], ["description", "Our purpose is to provide men and women with an effective and comprehensive Christian faith-based solution to life-controlling problems."], ["address", "7805 Kimble St, Houston, TX 77017"], ["phone", "(877) 491-3816"], ["image_url", "https://i.vimeocdn.com/video/580518905_780x439.jpg"], ["latitude", 29.6981138125], ["longitude", -95.2830413125], ["user_id", 7], ["created_at", "2019-01-22 02:22:43.633895"], ["updated_at", "2019-01-22 02:22:43.633895"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[36mShelter Create (1.3ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "latitude", "longitude", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Veterans Progress & Recovery Services"], ["description", "Transitional housing for veterans."], ["address", "7622 Boggess Rd, Houston, TX 77016"], ["phone", "(832) 253-7405"], ["image_url", "http://militarybenefits.info/wp-content/uploads/2018/01/american-flag-750x483.jpg"], ["latitude", 29.8615434972288], ["longitude", -95.2910818197227], ["user_id", 8], ["created_at", "2019-01-22 02:22:44.280227"], ["updated_at", "2019-01-22 02:22:44.280227"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mShelter Create (1.3ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Oasis of Houston"], ["description", "Affordable housing for veterans"], ["address", "4607 Cashel Castle Dr., Houston, TX 77069"], ["phone", "(281) 919-6144"], ["image_url", "https://pbs.twimg.com/profile_images/649681038164103168/RR8q2RV4.jpg"], ["user_id", 9], ["created_at", "2019-01-22 02:22:44.920787"], ["updated_at", "2019-01-22 02:22:44.920787"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mShelter Create (0.9ms)[0m  [1m[32mINSERT INTO "shelters" ("name", "description", "address", "phone", "image_url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Salvation Army Of Houston for Women"], ["description", "Transitional housing for single women who have completed an alcohol/drug detoxification program."], ["address", "4607 Cashel Castle Dr., Houston, TX 77069"], ["phone", "(713) 223-8889"], ["image_url", "http://salvationarmyhouston.org/wp-content/uploads/sites/5/2016/07/SAWA-red-logo.png"], ["user_id", 10], ["created_at", "2019-01-22 02:22:45.552340"], ["updated_at", "2019-01-22 02:22:45.552340"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mNeed Create (0.5ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 16], ["title", "Blanket"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/91i9s0wUuyL._SL1500_.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 40], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 02:22:45.561217"], ["updated_at", "2019-01-22 02:22:45.561217"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 16], ["title", "Canned Food"], ["image_url", "https://i5.walmartimages.com/asr/5f94a53f-7c20-49d6-ad0f-25492a5ad258_1.af808da77f19dad36484d163b886128e.jpeg"], ["description", "(3 Pack) Chef Boyardee Beef Ravioli, 15 oz, 4 Pack"], ["details", "Available everywhere"], ["quantity_needed", 30], ["quantity_bought", 0], ["shopping_url", "https://www.walmart.com/ip/3-Pack-Chef-Boyardee-Beef-Ravioli-15-oz-4-Pack/153932619https://www.walmart.com/ip/3-Pack-Chef-Boyardee-Beef-Ravioli-15-oz-4-Pack/153932619"], ["created_at", "2019-01-22 02:22:45.567480"], ["updated_at", "2019-01-22 02:22:45.567480"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mNeed Create (0.6ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 16], ["title", "Canned Food"], ["image_url", "https://www.mountainhouse.com/mm5/graphics/00000001/products/30111_Chicken_a_la_King.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 15], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 02:22:45.573356"], ["updated_at", "2019-01-22 02:22:45.573356"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 17], ["title", "Bottled Water"], ["image_url", "http://oasisanimalsanctuary.info/wp-content/uploads/2018/10/publix-purified-water-pure-life-ar-pure-purified-water-fl-oz-publix-purified-water-price-does-publix-purified-water-have-chlorine.jpg"], ["description", "Nestlé® Pure Life® Purified Water 32-16.9 fl. oz. Bottles"], ["details", "Available everywhere"], ["quantity_needed", 50], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 02:22:45.577745"], ["updated_at", "2019-01-22 02:22:45.577745"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 17], ["title", "Blanket"], ["image_url", "https://images-na.ssl-images-amazon.com/images/I/91i9s0wUuyL._SL1500_.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 25], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"\ntarget=\"_blank"], ["created_at", "2019-01-22 02:22:45.581401"], ["updated_at", "2019-01-22 02:22:45.581401"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 18], ["title", "Canned Food"], ["image_url", "https://www.mountainhouse.com/mm5/graphics/00000001/products/30111_Chicken_a_la_King.jpg"], ["description", "Pinzon Faux Fur Throw Blanket 63in x 87in, Frost Grey"], ["details", "Available everywhere"], ["quantity_needed", 20], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 02:22:45.585172"], ["updated_at", "2019-01-22 02:22:45.585172"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:74
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 18], ["title", "Canned Food"], ["image_url", "https://i5.walmartimages.com/asr/5f94a53f-7c20-49d6-ad0f-25492a5ad258_1.af808da77f19dad36484d163b886128e.jpeg"], ["description", "(3 Pack) Chef Boyardee Beef Ravioli, 15 oz, 4 Pack"], ["details", "Available everywhere"], ["quantity_needed", 13], ["quantity_bought", 0], ["shopping_url", "https://www.walmart.com/ip/3-Pack-Chef-Boyardee-Beef-Ravioli-15-oz-4-Pack/153932619"], ["created_at", "2019-01-22 02:22:45.588929"], ["updated_at", "2019-01-22 02:22:45.588929"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mShelter Load (0.1ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mNeed Create (0.4ms)[0m  [1m[32mINSERT INTO "needs" ("shelter_id", "title", "image_url", "description", "details", "quantity_needed", "quantity_bought", "shopping_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["shelter_id", 19], ["title", "Bottled Water"], ["image_url", "http://oasisanimalsanctuary.info/wp-content/uploads/2018/10/publix-purified-water-pure-life-ar-pure-purified-water-fl-oz-publix-purified-water-price-does-publix-purified-water-have-chlorine.jpg"], ["description", "Nestlé® Pure Life® Purified Water 32-16.9 fl. oz. Bottles"], ["details", "Available everywhere"], ["quantity_needed", 50], ["quantity_bought", 0], ["shopping_url", "https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR\"target=\"_blank"], ["created_at", "2019-01-22 02:22:45.593442"], ["updated_at", "2019-01-22 02:22:45.593442"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76

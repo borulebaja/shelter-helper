@@ -15,7 +15,9 @@ class NeedForm extends Component {
     this.state = {
       title: "",
       description: "",
-      details: ""
+      details: "",
+      quantity_needed: "",
+      quantity_bought: ""
     };
   }
 
@@ -54,6 +56,24 @@ class NeedForm extends Component {
             <input
               name="details"
               value={this.state.details}
+              type="text"
+              onChange={e => this.handleChange(e)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Quantity Needed: </label>
+            <input
+              name="quantity_needed"
+              value={this.state.quantity_needed}
+              type="text"
+              onChange={e => this.handleChange(e)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Quantity Bought: </label>
+            <input
+              name="quantity_bought"
+              value={this.state.quantity_bought}
               type="text"
               onChange={e => this.handleChange(e)}
             />

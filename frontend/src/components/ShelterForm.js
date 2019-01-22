@@ -14,6 +14,7 @@ class ShelterForm extends Component {
     super();
     this.state = {
       name: "",
+      description: "",
       address: "",
       phone: ""
     };
@@ -34,6 +35,15 @@ class ShelterForm extends Component {
             <input
               name="name"
               value={this.state.name}
+              type="text"
+              onChange={e => this.handleChange(e)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Description: </label>
+            <input
+              name="description"
+              value={this.state.description}
               type="text"
               onChange={e => this.handleChange(e)}
             />

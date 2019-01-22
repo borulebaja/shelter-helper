@@ -7,6 +7,7 @@ class EditShelter extends Component {
     super();
     this.state = {
       name: "",
+      description: "",
       address: "",
       phone: ""
     };
@@ -27,6 +28,15 @@ class EditShelter extends Component {
             name="name"
             type="text"
             value={this.state.name}
+            onChange={e => this.handleChange(e)}
+          />
+        </div>
+        <div>
+          <label>Description</label>
+          <input
+            name="description"
+            type="text"
+            value={this.state.description}
             onChange={e => this.handleChange(e)}
           />
         </div>

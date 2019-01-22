@@ -4,22 +4,6 @@ import { actions } from "../state/actions";
 import NeedDetail from "./NeedDetail";
 
 class ShelterNeeds extends Component {
-  // state = {
-  //     showEditNeedForm: false
-  // };
-
-  // editSheltNeed = () => {
-  //     if (this.state.showEditNeedForm) {
-  //         return (
-  //             <EditShelterNeed (create edit need component????)
-  //                 currentShelterNeed={this.props.currentShelterNeed}
-  //                 updateShelterNeed={this.props.updateShelterNeed}
-  //                 shelterNeedId={this.props.shelterNeed.id}
-  //             />
-  //         );
-  //     }
-  // };
-
   render() {
     return (
       <div>

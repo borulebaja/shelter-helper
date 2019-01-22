@@ -28,7 +28,7 @@ class Api::V1::NeedsController < Api::V1::ApplicationController
     end
     
     def need_params
-        params.require(:need).permit(:title, :image_url, :description, :details, :quantity_needed, :quantity_bought, :shelter_id)
+        params.require(:need).permit(:title, :image_url, :description, :details, :quantity_needed, :quantity_bought, :shopping_url, :shelter_id)
     end
     
     def define_current_need

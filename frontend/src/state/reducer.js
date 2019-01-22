@@ -9,8 +9,7 @@ import {
   GET_NEEDS,
   ADD_NEED,
   DELETE_NEED,
-  UPDATE_NEED,
-  QUANTITY_BOUGHT
+  UPDATE_NEED
 } from "./types";
 import history from "./history";
 
@@ -100,20 +99,7 @@ export const reducer = function(currentState, action) {
       });
       history.push("/homepage");
       break;
-    // case QUANTITY_BOUGHT:
-    //   newState.shelters = newState.shelters.map(shelter => {
-    //     if (shelter.id === action.payload.shelter_id) {
-    //       shelter.needs.map(need => {
-    //         if (need.id !== action.payload.id) {
-    //           return need;
-    //         }
-    //         return { ...need, ...action.payload };
-    //       });
-    //     } else {
-    //       return shelter;
-    //     }
-    //   });
-    //   break;
+
     default:
       return newState;
   }
