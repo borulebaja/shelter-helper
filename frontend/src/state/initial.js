@@ -1,5 +1,4 @@
 export const initialState = {
-  currentUser: {},
+  currentUser: null,
   shelters: []
-  // needs: []
 };

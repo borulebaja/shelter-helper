@@ -27,6 +27,7 @@ export const reducer = function(currentState, action) {
       break;
     case LOGOUT:
       localStorage.clear();
+      newState.currentUser = null;
       history.push("/homepage");
       break;
     case GET_SHELTERS:
