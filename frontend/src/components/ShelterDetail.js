@@ -61,6 +61,9 @@ class ShelterDetails extends Component {
               {this.props.shelter.name}
             </Typography>
             <Typography component="p">
+              {this.props.shelter.description}
+            </Typography>
+            <Typography component="p">
               <b>Address:</b> {this.props.shelter.address}
             </Typography>
             <Typography component="p">
@@ -70,8 +73,9 @@ class ShelterDetails extends Component {
         </CardActionArea>
         <CardActions>
           <Button
+            variant="contained"
+            color="secondary"
             size="small"
-            color="primary"
             onClick={() =>
               this.setState({
                 showNeeds: !this.state.showNeeds

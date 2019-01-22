@@ -5,7 +5,7 @@ import EditNeed from "./EditNeed";
 //import ShelterNeeds from "./ShelterNeeds";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
+// import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
@@ -52,7 +52,15 @@ class NeedDetail extends Component {
             <Typography component="p">
               <b>Quantity bought:</b> {this.props.need.quantity_bought}
             </Typography>
-            <button
+            <a href={this.props.need.shopping_url}>
+              <img
+                src="http://www.niftybuttons.com/amazon/amazon-button3.png"
+                alt=""
+              />
+            </a>
+            <Button
+              variant="contained"
+              color="secondary"
               onClick={() => {
                 this.props.quantityBought(
                   this.props.need,
@@ -62,14 +70,7 @@ class NeedDetail extends Component {
               }}
             >
               I bought one
-            </button>
-
-            <a
-              href="https://www.amazon.com/Pinzon-Faux-Throw-Blanket-Frost/dp/B01J2N7F8U/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=storypodca-20&linkId=2P4S6EY6B462X4AR"
-              target="_blank"
-            >
-              <img src="http://www.niftybuttons.com/amazon/amazon-button3.png" />
-            </a>
+            </Button>
 
             {/* { this.props.need.quantity == this.props.need.bought ? 'yay we have all our needs and hide the button to say i bought this} : <button onClick={the function to increment bought }> */}
           </CardContent>
@@ -105,10 +106,6 @@ class NeedDetail extends Component {
     );
   }
 }
-
-// const mapStateToProps = state => {
-//   return { need: state.need };
-// };
 
 export default connect(
   null,

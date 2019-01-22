@@ -15,19 +15,18 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" style={{ "background-color": "green" }}>
+        <AppBar position="static" style={{ "background-color": "black" }}>
           <Toolbar>
             <Typography
               color="inherit"
-              variant="h4"
+              variant="h6"
               onClick={() => history.push("/")}
             >
-              {" "}
-              Homeless Shelters{" "}
+              HOMELESS SHELTERS
             </Typography>
             <Tab
               label="Shelters"
-              style={{ "text-transform": "capitalize" }}
+              // style={{ "text-transform": "capitalize" }}
               onClick={() => history.push("/")}
             />
             {/* // users should be logged in to view form */}

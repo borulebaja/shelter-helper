@@ -7,7 +7,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <h3>Welcome to our shelter page!!! :) </h3>
+        <h3>WELCOME TO SUPPORTIVE HOUSING AND SHELTERS PAGE!!! </h3>
         <MapContainer />
 
         <ShelterContainer />

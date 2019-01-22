@@ -8,7 +8,10 @@ class EditNeed extends Component {
     this.state = {
       title: "",
       description: "",
-      details: ""
+      quantity_needed: "",
+      quantity_bought: "",
+      details: "",
+      shopping_url: ""
     };
   }
 
@@ -45,6 +48,33 @@ class EditNeed extends Component {
             name="details"
             type="text"
             value={this.state.details}
+            onChange={e => this.handleChange(e)}
+          />
+        </div>
+        <div>
+          <label>Quantity Needed</label>
+          <input
+            name="quantity_needed"
+            type="text"
+            value={this.state.quantity_needed}
+            onChange={e => this.handleChange(e)}
+          />
+        </div>
+        <div>
+          <label>Quantity Bought</label>
+          <input
+            name="quantity_bought"
+            type="text"
+            value={this.state.quantity_bought}
+            onChange={e => this.handleChange(e)}
+          />
+        </div>
+        <div>
+          <label>ShoppingUrl</label>
+          <input
+            name="shopping_url"
+            type="text"
+            value={this.state.shopping_url}
             onChange={e => this.handleChange(e)}
           />
         </div>

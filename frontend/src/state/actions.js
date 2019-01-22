@@ -87,6 +87,7 @@ export const actions = {
         body: JSON.stringify({
           shelter: {
             name: shelter.name,
+            description: shelter.description,
             address: shelter.address,
             phone: shelter.phone,
             user_id: user_id
@@ -114,6 +115,7 @@ export const actions = {
         body: JSON.stringify({
           shelter: {
             name: shelter.name,
+            description: shelter.description,
             address: shelter.address,
             phone: shelter.phone
           }
@@ -175,6 +177,9 @@ export const actions = {
             image_url: need.image_url,
             description: need.description,
             detail: need.details,
+            quantity_needed: need.quantity_needed,
+            quantity_bought: need.quantity_bought,
+            shopping_url: need.shopping_url,
             shelter_id: shelter_id
           }
         })
@@ -201,7 +206,10 @@ export const actions = {
           need: {
             title: need.title,
             description: need.description,
-            details: need.details
+            details: need.details,
+            quantity_needed: need.quantity_needed,
+            quantity_bought: need.quantity_bought,
+            shopping_url: need.shopping_url
           }
         })
       })
