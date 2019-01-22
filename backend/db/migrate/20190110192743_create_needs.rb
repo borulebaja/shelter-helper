@@ -8,6 +8,7 @@ class CreateNeeds < ActiveRecord::Migration[5.2]
       t.string :details
       t.integer :quantity_needed
       t.integer :quantity_bought
+      t.string :shopping_url
       t.timestamps
     end
   end

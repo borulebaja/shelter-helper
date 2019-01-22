@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_01_10_192743) do
     t.string "details"
     t.integer "quantity_needed"
     t.integer "quantity_bought"
+    t.string "shopping_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["shelter_id"], name: "index_needs_on_shelter_id"
@@ -27,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_01_10_192743) do
 
   create_table "shelters", force: :cascade do |t|
     t.string "name"
+    t.string "description"
     t.string "address"
     t.string "phone"
     t.string "image_url"
