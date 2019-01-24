@@ -8,6 +8,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Tab from "@material-ui/core/Tab";
 import history from "../state/history";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import "../App.css";
 
 class NavBar extends Component {
   // handleChange()
@@ -15,33 +17,55 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static" style={{ "background-color": "black" }}>
+        <AppBar position="fixed" style={{ backgroundColor: "#19283E" }}>
           <Toolbar>
             <Typography
               color="inherit"
+              style={{ flexGrow: 1 }}
               variant="h6"
               onClick={() => history.push("/")}
             >
-              HOMELESS SHELTERS
+              SHELTER HELPER
             </Typography>
-            <Tab
-              label="Shelters"
-              // style={{ "text-transform": "capitalize" }}
-              onClick={() => history.push("/")}
-            />
+            <Button
+              color="inherit"
+              onClick={
+                () => history.push("/") // style={{ "text-transform": "capitalize" }} // label="Shelters"
+              }
+            >
+              Shelters
+            </Button>
             {/* // users should be logged in to view form */}
             {this.props.currentUser && (
-              <Tab
-                label="ShelterForm"
-                onClick={() => history.push("/shelterform")}
-              />
+              <Button
+                color="inherit"
+                onClick={
+                  () => history.push("/shelterform") // label="ShelterForm"
+                }
+              >
+                ShelterForm
+              </Button>
             )}
 
-            <Tab label="SignUp" onClick={() => history.push("/signup")} />
+            <Button
+              label="SignUp"
+              color="inherit"
+              onClick={() => history.push("/signup")}
+            >
+              SignUp
+            </Button>
             {this.props.currentUser !== null ? (
-              <Tab label="Logout" onClick={() => this.props.logout()} />
+              <Button color="inherit" onClick={() => this.props.logout()}>
+                Logout
+              </Button>
             ) : (
-              <Tab label="Login" onClick={() => history.push("/login")} />
+              <Button
+                label="Login"
+                color="inherit"
+                onClick={() => history.push("/login")}
+              >
+                Login
+              </Button>
             )}
           </Toolbar>
         </AppBar>

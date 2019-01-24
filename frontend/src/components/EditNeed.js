@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { actions } from "../state/actions";
 import { connect } from "react-redux";
+import Button from "@material-ui/core/Button";
 
 class EditNeed extends Component {
   constructor() {
@@ -78,14 +79,20 @@ class EditNeed extends Component {
             onChange={e => this.handleChange(e)}
           />
         </div>
-        <button
+        <Button
+          variant="contained"
+          color="inherit"
           onClick={e => {
             e.preventDefault();
-            this.props.updateNeed(this.state, this.props.shelterId);
+            this.props.updateNeed(
+              this.state,
+              this.props.shelterId,
+              this.props.needId
+            );
           }}
         >
           save
-        </button>
+        </Button>
       </form>
     );
   }

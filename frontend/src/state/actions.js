@@ -9,29 +9,23 @@ import {
   ADD_NEED,
   DELETE_NEED,
   UPDATE_NEED,
-  GET_NEEDS
+  GET_NEEDS,
+  CHECK_IF_LOGGED_IN
 } from "./types";
 
 export const actions = {
-  login(user) {
+  login(logUser) {
     return function(dispatch, getState) {
       fetch("http://localhost:3000/api/v1/auth/", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Accept: "application/json"
         },
-        body: JSON.stringify({
-          email: user.email,
-          password: user.password
-        })
+        body: JSON.stringify(logUser)
       })
         .then(res => res.json())
-        .then(result => {
-          console.log(result);
-          localStorage.setItem("token", result.token);
-          // localStorage.setItem("userId", result.user.id);
-          dispatch({ type: LOGIN, payload: result });
-        });
+        .then(user => dispatch({ type: LOGIN, payload: user }));
     };
   },
 
@@ -57,6 +51,9 @@ export const actions = {
 
   logout() {
     return { type: LOGOUT };
+  },
+  checkIfLoggedIn() {
+    return { type: CHECK_IF_LOGGED_IN };
   },
 
   getShelters() {
@@ -226,7 +223,8 @@ export const actions = {
   quantityBought(need, id, needId) {
     return function(dispatch, getState) {
       let newQuantity = need.quantity_bought + 1;
-      console.log(newQuantity);
+      let currentQuantity = need.quantity_needed - 1;
+      // console.log(currentQuantity);
       fetch(`http://localhost:3000/api/v1/shelters/${id}/needs/${needId}`, {
         method: "PATCH",
         headers: {
@@ -235,12 +233,13 @@ export const actions = {
           Accept: "application/json"
         },
         body: JSON.stringify({
-          quantity_bought: newQuantity
+          quantity_bought: newQuantity,
+          quantity_needed: currentQuantity
         })
       })
         .then(res => res.json())
         .then(result => {
-          console.log(result);
+          console.log("in action ", result);
           dispatch({ type: UPDATE_NEED, payload: result });
         });
     };

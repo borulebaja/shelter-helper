@@ -12,6 +12,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+// import { Row, Column, Grid } from "react-bootstrap";
+import "./ShelterDetail.css";
 
 class ShelterDetails extends Component {
   componentDidMount() {
@@ -50,11 +52,42 @@ class ShelterDetails extends Component {
 
   render() {
     return (
-      <Card style={{ maxWidth: 250 }}>
+      <Card
+        className="card"
+        // style={{
+        //   width: "relative",
+        //   height: "auto",
+        //   marginLeft: "20px",
+        //   marginRight: "20px",
+        //   marginTop: "15px",
+        //   marginBottom: "20px"
+        // }}
+        // style={{
+        //   width: "90%",
+        //   maxwidth: "1240px",
+        //   margin: "0 auto",
+        //   display: "grid",
+        //   gridTemplateColumns: "1fr",
+        //   gridTemplateRows: "auto",
+        //   gridGap: "20px 20px ",
+        //   background: "white",
+        //   textDecoration: "none",
+        //   color: "#444",
+        //   boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   minHeight: "100%"
+        // }}
+      >
         <CardActionArea>
           <CardMedia
             image={this.props.shelter.image_url}
-            style={{ height: 150 }}
+            style={{
+              height: "250px",
+              width: "100%",
+              backgroundPosition: "center center ",
+              backgroundSize: "cover"
+            }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -73,8 +106,11 @@ class ShelterDetails extends Component {
         </CardActionArea>
         <CardActions>
           <Button
+            needs={this.props.shelter.needs}
             variant="contained"
-            color="secondary"
+            style={{
+              backgroundColor: "#2b3649"
+            }}
             size="small"
             onClick={() =>
               this.setState({
@@ -122,10 +158,6 @@ class ShelterDetails extends Component {
     );
   }
 }
-
-// const mapStateToProps = state => {
-//   return { shelters: state.shelters };
-// };
 
 export default connect(
   null,

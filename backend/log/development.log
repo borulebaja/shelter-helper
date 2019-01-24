@@ -24594,3 +24594,1341 @@ Processing by Api::V1::SheltersController#index as JSON
 Completed 200 OK in 233ms (Views: 202.7ms | ActiveRecord: 20.5ms)
 
 
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:23:57 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/borulebaja/.rvm/gems/ruby-2.5.1/gems/rack-cors-1.0.2/lib/rack/cors.rb:97
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 113ms (Views: 89.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:27:02 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (22.3ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (4.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 136ms (Views: 98.9ms | ActiveRecord: 30.3ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 09:27:22 -0600
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 129ms (Views: 1.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:27:22 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 51ms (Views: 45.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:28:35 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (4.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 179ms (Views: 160.2ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:30:46 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 197ms (Views: 181.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:33:24 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (5.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 295ms (Views: 276.0ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:33:36 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 69ms (Views: 62.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:36:59 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (13.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 126ms (Views: 95.1ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:38:30 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (19.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 159ms (Views: 123.7ms | ActiveRecord: 24.7ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 09:46:04 -0600
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 140ms (Views: 6.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:46:04 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 85ms (Views: 75.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:46:08 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:48:54 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (3.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 376ms (Views: 359.3ms | ActiveRecord: 8.2ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 09:53:43 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>2, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_bought"=>2}}
+  [1m[36mNeed Load (11.1ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (2.5ms)[0m  [1m[33mUPDATE "needs" SET "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_bought", 2], ["updated_at", "2019-01-24 15:53:43.580420"], ["id", 33]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 101ms (Views: 6.8ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:57:38 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (14.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (19.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (5.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 272ms (Views: 219.5ms | ActiveRecord: 43.3ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 09:57:49 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>3, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_bought"=>3}}
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (7.3ms)[0m  [1m[33mUPDATE "needs" SET "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_bought", 3], ["updated_at", "2019-01-24 15:57:49.023604"], ["id", 33]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 10.0ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 09:57:50 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>3, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_bought"=>3}}
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 09:57:51 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>3, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_bought"=>3}}
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.2ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/users/" for 127.0.0.1 at 2019-01-24 09:59:12 -0600
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/users_controller.rb:7
+Completed 200 OK in 112ms (Views: 6.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 09:59:14 -0600
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "auth"=>{"email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 401 Unauthorized in 13ms (Views: 0.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 09:59:14 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 75ms (Views: 68.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:04:40 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (5.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 141ms (Views: 118.8ms | ActiveRecord: 12.7ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 10:04:46 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>4, "quantity_needed"=>39, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_needed"=>39, "quantity_bought"=>4}}
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (3.0ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (3.6ms)[0m  [1m[33mUPDATE "needs" SET "quantity_needed" = ?, "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_needed", 39], ["quantity_bought", 4], ["updated_at", "2019-01-24 16:04:46.888289"], ["id", 33]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 78ms (Views: 1.8ms | ActiveRecord: 11.0ms)
+
+
+Started PATCH "/api/v1/shelters/61/needs/33" for 127.0.0.1 at 2019-01-24 10:04:47 -0600
+Processing by Api::V1::NeedsController#update as JSON
+  Parameters: {"quantity_bought"=>5, "quantity_needed"=>38, "shelter_id"=>"61", "id"=>"33", "need"=>{"quantity_needed"=>38, "quantity_bought"=>5}}
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT  "needs".* FROM "needs" WHERE "needs"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mShelter Load (0.3ms)[0m  [1m[34mSELECT  "shelters".* FROM "shelters" WHERE "shelters"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[36mNeed Update (1.0ms)[0m  [1m[33mUPDATE "needs" SET "quantity_needed" = ?, "quantity_bought" = ?, "updated_at" = ? WHERE "needs"."id" = ?[0m  [["quantity_needed", 38], ["quantity_bought", 5], ["updated_at", "2019-01-24 16:04:47.563654"], ["id", 33]]
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/needs_controller.rb:21
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:05:33 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 151ms (Views: 68.9ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 10:05:41 -0600
+Processing by Api::V1::AuthController#create as JSON
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 111ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:05:42 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.6ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 60ms (Views: 54.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:05:44 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.4ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 10:05:56 -0600
+Processing by Api::V1::AuthController#create as JSON
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 99ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:05:56 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 64ms (Views: 58.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:05:59 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.5ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:09:58 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (5.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (3.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (5.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 197ms (Views: 152.2ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:10:32 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.0ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 104ms (Views: 97.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:10:39 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.7ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:11:16 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 216ms (Views: 198.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:12:34 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (6.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (3.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 200ms (Views: 176.6ms | ActiveRecord: 13.2ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 10:14:25 -0600
+Processing by Api::V1::AuthController#create as JSON
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 125ms (Views: 7.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:14:25 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (3.0ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.1ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 116ms (Views: 106.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:14:27 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.8ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 162ms (Views: 152.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:23:04 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (3.2ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.7ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.8ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (1.6ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 321ms (Views: 294.9ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:23:18 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (1.1ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/api/v1/auth/" for 127.0.0.1 at 2019-01-24 10:23:40 -0600
+Processing by Api::V1::AuthController#create as JSON
+  Parameters: {"email"=>"alan@example.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"alan@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:6
+Completed 200 OK in 124ms (Views: 4.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:23:40 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (0.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/v1/shelters" for 127.0.0.1 at 2019-01-24 10:23:44 -0600
+Processing by Api::V1::SheltersController#index as JSON
+  Parameters: {"shelter"=>{}}
+  [1m[36mShelter Load (2.9ms)[0m  [1m[34mSELECT "shelters".* FROM "shelters"[0m
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.5ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 61]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 62]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 63]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 64]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 65]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 66]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (2.9ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 67]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 68]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 69]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 70]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 71]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.4ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 72]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.3ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 73]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 74]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+  [1m[36mNeed Load (0.2ms)[0m  [1m[34mSELECT "needs".* FROM "needs" WHERE "needs"."shelter_id" = ?[0m  [["shelter_id", 75]]
+  ↳ app/controllers/api/v1/shelters_controller.rb:11
+Completed 200 OK in 165ms (Views: 151.2ms | ActiveRecord: 9.5ms)
+
+

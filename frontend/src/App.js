@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
 import ShelterForm from "./components/ShelterForm";
 import EditShelter from "./components/EditShelter";
+import "./App.css";
 // import NeedForm from "./components/NeedForm";
 
 export default class _App extends Component {

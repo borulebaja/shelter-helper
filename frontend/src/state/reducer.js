@@ -9,38 +9,47 @@ import {
   GET_NEEDS,
   ADD_NEED,
   DELETE_NEED,
-  UPDATE_NEED
+  UPDATE_NEED,
+  CHECK_IF_LOGGED_IN
 } from "./types";
 import history from "./history";
+import { redirect } from "./history";
 
 export const reducer = function(currentState, action) {
   const newState = { ...currentState };
 
   switch (action.type) {
     case LOGIN:
-      newState.currentUser = action.payload;
-      history.push("/homepage");
+      localStorage.setItem("token", action.payload.token);
+      localStorage.setItem("currentUser", JSON.stringify(action.payload.user));
+      newState.currentUser = action.payload.user;
+      redirect("/homepage");
       break;
     case SIGNUP:
       newState.currentUser = action.payload;
-      history.push("/login");
+      redirect("/login");
       break;
     case LOGOUT:
       localStorage.clear();
       newState.currentUser = null;
-      history.push("/homepage");
+      redirect("/homepage");
       break;
     case GET_SHELTERS:
       newState.shelters = action.payload;
       break;
     case ADD_SHELTER:
       newState.shelters = [...newState.shelters, action.payload];
-      history.push("/homepage");
+      redirect("/homepage");
       break;
     case DELETE_SHELTER:
       newState.shelters = newState.shelters.filter(
         shelter => shelter.id !== action.payload.id
       );
+      break;
+    case CHECK_IF_LOGGED_IN:
+      if (localStorage.getItem("token")) {
+        newState.currentUser = localStorage.currentUser;
+      }
       break;
     case UPDATE_SHELTER:
       newState.shelters = newState.shelters.map(shelter => {
@@ -49,7 +58,7 @@ export const reducer = function(currentState, action) {
         }
         return { ...shelter, ...action.payload };
       });
-      history.push("/homepage");
+      redirect("/homepage");
       break;
     case GET_NEEDS:
       console.log(action.payload);
@@ -64,7 +73,7 @@ export const reducer = function(currentState, action) {
           return shelter;
         }
       });
-      history.push("/homepage");
+      redirect("/homepage");
       break;
     case DELETE_NEED:
       let destroyNeed = action.payload;
@@ -81,24 +90,23 @@ export const reducer = function(currentState, action) {
 
       break;
     case UPDATE_NEED:
-      console.log(action.payload);
+      console.log("in reducer ", action.payload);
       newState.shelters = newState.shelters.map(shelter => {
         if (shelter.id === action.payload.shelter_id) {
-          console.log(shelter);
-          shelter.needs.map(need => {
+          shelter.needs = shelter.needs.map(need => {
             if (need.id !== action.payload.id) {
               return need;
             } else {
-              console.log(need);
               return { ...need, ...action.payload };
             }
           });
-          return shelter; // updates need but not returning the updated shelter
+          return { ...shelter };
         } else {
           return shelter;
         }
       });
-      history.push("/homepage");
+
+      redirect("/homepage");
       break;
 
     default:

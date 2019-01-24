@@ -9,6 +9,7 @@ import ShelterDetails from "../components/ShelterDetail";
 class ShelterContainer extends Component {
   componentDidMount() {
     this.props.getShelters();
+    this.props.checkIfLoggedIn();
   }
 
   render() {

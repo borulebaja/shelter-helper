@@ -9,11 +9,13 @@ class ShelterNeeds extends Component {
       <div>
         <h3>Shelter Needs</h3>
         {this.props.needs.map(need => {
-          return (
-            <div>
-              <NeedDetail need={need} />
-            </div>
-          );
+          if (need.quantity_needed > 0) {
+            return (
+              <div>
+                <NeedDetail need={need} />
+              </div>
+            );
+          }
         })}
         <ul>
           {/* <img
@@ -43,6 +45,10 @@ class ShelterNeeds extends Component {
     );
   }
 }
+
+// const mapStateToProps = state => {
+//   return { needs: state.needs };
+// };
 
 export default connect(
   null,
