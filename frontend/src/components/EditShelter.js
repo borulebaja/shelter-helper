@@ -21,7 +21,7 @@ class EditShelter extends Component {
 
   render() {
     return (
-      <form>
+      <form style={{ margin: "10px" }}>
         <h3>Edit Shelter</h3>
         <div>
           <label>Shelter Name</label>
@@ -60,14 +60,18 @@ class EditShelter extends Component {
           />
         </div>
         <Button
-          variant="contained"
-          color="inherit"
+          type="submit"
+          variant="inherit"
+          style={{
+            backgroundColor: "#2b3649",
+            color: "white"
+          }}
           onClick={e => {
             e.preventDefault();
             this.props.updateShelter(this.state, this.props.shelterId);
           }}
         >
-          save
+          Save
         </Button>
       </form>
     );

@@ -5,14 +5,6 @@ import Card from "@material-ui/core/Card";
 // import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
 
-// const mapStyles = {
-//   width: "30%",
-//   height: "50%",
-//   position: "absolute",
-//   right: "10px",
-//   bottom: "10px"
-// };
-
 export class MapContainer extends Component {
   state = {
     showingInfoWindow: false, //Hides or the shows the infoWindow
@@ -21,7 +13,6 @@ export class MapContainer extends Component {
   };
 
   onMarkerClick = (props, marker, e) => {
-    console.log(props);
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
@@ -43,8 +34,8 @@ export class MapContainer extends Component {
       <div>
         <Card
           style={{
-            height: "85vh",
-            width: "30%",
+            height: "80vh",
+            width: "28%",
             position: "fixed",
             right: "10px",
             bottom: "10px"
@@ -53,9 +44,8 @@ export class MapContainer extends Component {
           <Map
             google={this.props.google}
             zoom={14}
-            initialCenter={
-              { lat: 29.7588788, lng: -95.3638645 } // style={mapStyles}
-            }
+            initialCenter={{ lat: 29.7588788, lng: -95.3638645 }}
+            MapTypeId={{ MapTypeId: "satellite" }}
           >
             {this.props.shelters.map(shelter => (
               <Marker

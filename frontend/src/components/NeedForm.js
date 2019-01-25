@@ -30,8 +30,8 @@ class NeedForm extends Component {
     // console.log(this.props);
 
     return (
-      <div>
-        <h2>Create Need</h2>
+      <div style={{ margin: "10px" }}>
+        <h2>Create New Need</h2>
         <form>
           <div className="form-group">
             <label>Need Title: </label>

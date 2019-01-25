@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Grid from "@material-ui/core/Grid";
+// import { Row, Col } from "react-bootstrap";
 import Card from "@material-ui/core/Card";
 
 import { actions } from "../state/actions";
@@ -14,8 +15,8 @@ class ShelterContainer extends Component {
 
   render() {
     return (
-      <div style={{ maxWidth: "70%" }}>
-        <Grid container spacing={4}>
+      <div style={{ width: "70%" }}>
+        <Grid container spacing={8}>
           {this.props.shelters.map(shelter => {
             return (
               <Grid item xs={12} sm={6} lg={4} xl={3}>

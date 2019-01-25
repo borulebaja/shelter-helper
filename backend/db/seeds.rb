@@ -11,7 +11,7 @@ Shelter.destroy_all
 Need.destroy_all
 
 user1 = User.create(name: "Alan", email: "alan@example.com", password: "0000")
-user2 = User.create(name: "Sheba", email: "sheba@example.com", password: "0000")
+user2 = User.create(name: "Bilikis", email: "sheba@example.com", password: "0000")
 user3 = User.create(name: "Janu", email: "janu@example.com", password: "0000")
 user4 = User.create(name: "Hannah", email: "hannah@example.com", password: "0000")
 user5 = User.create(name: "brabra", email: "brabra@example.com", password: "0000")
@@ -21,6 +21,9 @@ user5 = User.create(name: "brabra", email: "brabra@example.com", password: "0000
 
 s1 = Shelter.create(name: 'Spirit Key Transitional Housing Cypress', description: 'Christ centered services provide housing, job training, life skills training', address: '13617 Kaltenbrun Rd
 Houston, TX 77086', phone: '(281) 971-0014', image_url: 'https://www.shelterlistings.org/images/shelters/35971_1364357023.jpg', user_id: user1.id)
+
+s2 = Shelter.create(name: 'Alan Shelter', description: 'Read The Error', address: '1000 Main St,
+Houston, TX 77002', phone: '(555) 555-5555', image_url: 'https://files.slack.com/files-pri/T02MD9XTF-FFMQ43HJL/alan_stars.png', user_id: user1.id)
 
 s2 = Shelter.create(name: 'Aable Starting Point', description: 'Affordable temporary housing for women and men at separate locations. ', address: '602 Girard St, Houston, TX 77007', phone: '(713) 575-5033', image_url: 'https://www.shelterlistings.org/images/shelters/37297_aable1.jpg', user_id: user2.id)
 
@@ -72,3 +75,5 @@ need6 = Need.create(title: "Toothbrush", image_url: 'https://images-na.ssl-image
 need7 = Need.create(title: "Canned Food", image_url: 'https://i5.walmartimages.com/asr/5f94a53f-7c20-49d6-ad0f-25492a5ad258_1.af808da77f19dad36484d163b886128e.jpeg', description: "PACK OF 12 Chef Boyardee 7oz Beefaroni", details: 'Available everywhere', quantity_needed: 13, quantity_bought: 0, shopping_url: 'https://www.amazon.com/d/Pasta-Noodle-Dishes/Chef-Boyardee-Beefaroni-DECICIOUS-PASTA/B008VSYUEK/', shelter_id: s3.id)
 
 need8 = Need.create(title: "Bottled Water", image_url: 'http://oasisanimalsanctuary.info/wp-content/uploads/2018/10/publix-purified-water-pure-life-ar-pure-purified-water-fl-oz-publix-purified-water-price-does-publix-purified-water-have-chlorine.jpg', description: "Nestlé® Pure Life® Purified Water 32-16.9 fl. oz. Bottles", details: 'Available everywhere', quantity_needed: 30, quantity_bought: 0, shopping_url: 'https://www.amazon.com/Nestle-Pure-Life-Purified-Water/dp/B003O3ACJ4/', shelter_id: s4.id)
+
+need9 = Need.create(title: "Socks & Gloves Set", image_url: 'https://images-na.ssl-images-amazon.com/images/I/61vjWD3t1aL._UY741_.jpg', description: "King's Apparel Winter Kit (Hat, Socks, and Gloves)", details: 'Available everywhere', quantity_needed: 25, quantity_bought: 0, shopping_url: 'https://www.amazon.com/Winter-Gloves-Driving-Snowboarding-Beanie/dp/B07K417LM1/', shelter_id: s4.id)

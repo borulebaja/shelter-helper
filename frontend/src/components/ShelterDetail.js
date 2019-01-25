@@ -52,33 +52,7 @@ class ShelterDetails extends Component {
 
   render() {
     return (
-      <Card
-        className="card"
-        // style={{
-        //   width: "relative",
-        //   height: "auto",
-        //   marginLeft: "20px",
-        //   marginRight: "20px",
-        //   marginTop: "15px",
-        //   marginBottom: "20px"
-        // }}
-        // style={{
-        //   width: "90%",
-        //   maxwidth: "1240px",
-        //   margin: "0 auto",
-        //   display: "grid",
-        //   gridTemplateColumns: "1fr",
-        //   gridTemplateRows: "auto",
-        //   gridGap: "20px 20px ",
-        //   background: "white",
-        //   textDecoration: "none",
-        //   color: "#444",
-        //   boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   minHeight: "100%"
-        // }}
-      >
+      <Card className="card">
         <CardActionArea>
           <CardMedia
             image={this.props.shelter.image_url}
@@ -104,14 +78,12 @@ class ShelterDetails extends Component {
             </Typography>
           </CardContent>
         </CardActionArea>
+
         <CardActions>
           <Button
             needs={this.props.shelter.needs}
             variant="contained"
-            style={{
-              backgroundColor: "#2b3649"
-            }}
-            size="small"
+            style={{ backgroundColor: "#2b3649", color: "white" }}
             onClick={() =>
               this.setState({
                 showNeeds: !this.state.showNeeds
@@ -120,32 +92,35 @@ class ShelterDetails extends Component {
           >
             {this.state.showNeeds ? "Hide needs" : "Show needs"}
           </Button>
+          {localStorage.token && (
+            <div>
+              <Button
+                type="edit"
+                style={{
+                  backgroundColor: "#2b3649",
+                  color: "white",
+                  marginRight: "3px"
+                }}
+                onClick={() =>
+                  this.setState({
+                    showEditForm: !this.state.showEditForm
+                  })
+                }
+              >
+                Edit Shelter
+              </Button>
+
+              <Button
+                type="delete"
+                style={{ backgroundColor: "#2b3649", color: "white" }}
+                onClick={() => this.props.deleteShelter(this.props.shelter.id)}
+              >
+                Delete Shelter
+              </Button>
+            </div>
+          )}
         </CardActions>
-
-        {localStorage.token && (
-          <div>
-            <button
-              type="edit"
-              onClick={() =>
-                this.setState({
-                  showEditForm: !this.state.showEditForm
-                })
-              }
-            >
-              edit shelter
-            </button>
-
-            <br />
-            <button
-              type="delete"
-              onClick={() => this.props.deleteShelter(this.props.shelter.id)}
-            >
-              delete shelter
-            </button>
-
-            {this.editShelt()}
-          </div>
-        )}
+        {this.editShelt()}
 
         <div>
           {this.state.showNeeds && (

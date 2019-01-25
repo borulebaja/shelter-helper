@@ -67,7 +67,8 @@ class Login extends Component {
               type="submit"
               fullWidth
               style={{
-                backgroundColor: "#2b3649"
+                backgroundColor: "#2b3649",
+                color: "white"
               }}
               variant="contained"
               onClick={e => {
@@ -80,9 +81,11 @@ class Login extends Component {
           </form>
           <br />
           <Button
+            fullWidth
             onClick={() => history.push("/signup")}
             style={{
-              backgroundColor: "#2b3649"
+              backgroundColor: "#2b3649",
+              color: "white"
             }}
           >
             New User? Please Sign Up

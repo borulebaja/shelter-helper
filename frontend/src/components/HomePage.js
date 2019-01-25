@@ -11,9 +11,9 @@ export default class HomePage extends Component {
         <br />
         <br />
         <br />
-        <h3 style={{ color: "white" }}>
+        <h2 style={{ color: "white" }}>
           WELCOME TO SUPPORTIVE HOUSING AND SHELTERS PAGE!!!{" "}
-        </h3>
+        </h2>
         <MapContainer />
 
         <ShelterContainer />

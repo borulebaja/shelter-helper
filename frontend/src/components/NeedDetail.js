@@ -61,6 +61,7 @@ class NeedDetail extends Component {
             <Button
               variant="contained"
               color="secondary"
+              style={{ margin: "10px" }}
               onClick={() => {
                 this.props.quantityBought(
                   this.props.need,
@@ -71,37 +72,39 @@ class NeedDetail extends Component {
             >
               I bought one
             </Button>
-
-            {/* { this.props.need.quantity == this.props.need.bought ? 'yay we have all our needs and hide the button to say i bought this} : <button onClick={the function to increment bought }> */}
+            {localStorage.token && (
+              <div>
+                <Button
+                  type="edit"
+                  variant="contained"
+                  style={{ margin: "10px" }}
+                  onClick={() =>
+                    this.setState({
+                      showEditNeedForm: !this.state.showEditNeedForm
+                    })
+                  }
+                >
+                  Edit Need
+                </Button>
+                <br />
+                <Button
+                  type="delete"
+                  variant="contained"
+                  style={{ margin: "10px" }}
+                  onClick={() =>
+                    this.props.deleteNeed(
+                      this.props.need.shelter_id,
+                      this.props.need.id
+                    )
+                  }
+                >
+                  Delete Need
+                </Button>
+                {this.editSheltNeed()}
+              </div>
+            )}
           </CardContent>
         </CardActionArea>
-        {localStorage.token && (
-          <div>
-            <button
-              type="edit"
-              onClick={() =>
-                this.setState({
-                  showEditNeedForm: !this.state.showEditNeedForm
-                })
-              }
-            >
-              edit need
-            </button>
-            <br />
-            <button
-              type="delete"
-              onClick={() =>
-                this.props.deleteNeed(
-                  this.props.need.shelter_id,
-                  this.props.need.id
-                )
-              }
-            >
-              delete need
-            </button>
-            {this.editSheltNeed()}
-          </div>
-        )}
       </Card>
     );
   }

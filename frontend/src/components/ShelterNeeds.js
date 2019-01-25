@@ -6,12 +6,12 @@ import NeedDetail from "./NeedDetail";
 class ShelterNeeds extends Component {
   render() {
     return (
-      <div>
-        <h3>Shelter Needs</h3>
+      <div style={{ margin: "10px" }}>
+        <h3>Items Needed</h3>
         {this.props.needs.map(need => {
           if (need.quantity_needed > 0) {
             return (
-              <div>
+              <div style={{ margin: "10px" }}>
                 <NeedDetail need={need} />
               </div>
             );

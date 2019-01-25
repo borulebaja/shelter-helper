@@ -82,6 +82,10 @@ class EditNeed extends Component {
         <Button
           variant="contained"
           color="inherit"
+          style={{
+            backgroundColor: "#2b3649",
+            color: "white"
+          }}
           onClick={e => {
             e.preventDefault();
             this.props.updateNeed(

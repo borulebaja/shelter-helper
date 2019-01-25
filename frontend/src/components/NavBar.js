@@ -12,8 +12,6 @@ import Button from "@material-ui/core/Button";
 import "../App.css";
 
 class NavBar extends Component {
-  // handleChange()
-
   render() {
     return (
       <div>
@@ -27,12 +25,7 @@ class NavBar extends Component {
             >
               SHELTER HELPER
             </Typography>
-            <Button
-              color="inherit"
-              onClick={
-                () => history.push("/") // style={{ "text-transform": "capitalize" }} // label="Shelters"
-              }
-            >
+            <Button color="inherit" onClick={() => history.push("/")}>
               Shelters
             </Button>
             {/* // users should be logged in to view form */}

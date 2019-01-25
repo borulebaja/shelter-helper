@@ -78,7 +78,8 @@ class SignUp extends Component {
               type="submit"
               fullWidth
               style={{
-                backgroundColor: "#2b3649"
+                backgroundColor: "#2b3649",
+                color: "white"
               }}
               variant="contained"
               onClick={e => {
