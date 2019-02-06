@@ -12,7 +12,6 @@ import {
   UPDATE_NEED,
   CHECK_IF_LOGGED_IN
 } from "./types";
-import history from "./history";
 import { redirect } from "./history";
 
 export const reducer = function(currentState, action) {

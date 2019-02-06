@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Grid from "@material-ui/core/Grid";
-// import { Row, Col } from "react-bootstrap";
-import Card from "@material-ui/core/Card";
-
 import { actions } from "../state/actions";
 import ShelterDetails from "../components/ShelterDetail";
+import Grid from "@material-ui/core/Grid";
 
 class ShelterContainer extends Component {
   componentDidMount() {

@@ -17,30 +17,6 @@ class ShelterNeeds extends Component {
             );
           }
         })}
-        <ul>
-          {/* <img
-            src={this.props.need.image_url}
-            alt=""
-            width="150"
-            height="120"
-          /> */}
-        </ul>
-        {/* <button
-          type="edit"
-          onClick={() =>
-            this.setState({ showEditNeedForm: !this.state.showEditNeedForm })
-          }
-        >
-          edit me
-        </button>
-        <br />
-        <button
-          type="delete"
-          onClick={() => this.props.deleteNeed(this.props.need.id)}
-        >
-          delete me
-        </button>
-        {this.editSheltNeed()} */}
       </div>
     );
   }

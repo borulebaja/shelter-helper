@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
 import ShelterForm from "./components/ShelterForm";
 import EditShelter from "./components/EditShelter";
+// import NeedDialog from "./components/NeedDialog";
 import "./App.css";
 // import NeedForm from "./components/NeedForm";
 
@@ -24,7 +25,6 @@ export default class _App extends Component {
             <Route path="/homepage" component={HomePage} />
             <Route path="/shelterform" component={ShelterForm} />
             <Route path="/editshelter" component={EditShelter} />
-            {/* <Route path="/needform" component={NeedForm} /> */}
             <Route path="/" render={() => <Redirect to="/homepage" />} />
           </Switch>
         </Router>

@@ -12,7 +12,9 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-// import { Row, Column, Grid } from "react-bootstrap";
+// import Modal from "@material-ui/core/Modal";
+
+// import Dialog from "@material-ui/core/Dialog";
 import "./ShelterDetail.css";
 
 class ShelterDetails extends Component {
@@ -37,7 +39,15 @@ class ShelterDetails extends Component {
     }
   };
 
-  // created new function for display needs
+  // handleOpen = () => {
+  //   this.setState({ showNeeds: true });
+  // };
+
+  // handleClose = () => {
+  //   this.setState({ showNeeds: false });
+  // };
+
+  // function for displaying needs
   showNeeds = () => {
     if (this.state.showNeeds) {
       return (
@@ -89,9 +99,19 @@ class ShelterDetails extends Component {
                 showNeeds: !this.state.showNeeds
               })
             }
+            // onClick={() => this.handleOpen}
           >
             {this.state.showNeeds ? "Hide needs" : "Show needs"}
           </Button>
+          {/* <Modal
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            showNeeds={this.state.showNeeds}
+            onClose={this.handleClose}
+          >
+            {" "}
+            what is modal{" "}
+          </Modal> */}
           {localStorage.token && (
             <div>
               <Button
